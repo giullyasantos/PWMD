@@ -1,38 +1,350 @@
-.App {
-  text-align: center;
+section {
+  cursor: default;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 2;
+  overflow: hidden;
+}
+h1, h2, h3 {
+  color: rgba(252,71,61,255);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p{
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.left-top {
+  width: 40%;
+}
+
+.right-bottom {
+  width: 60%;
+}
+
+.image-slider {
+  width: 100%; 
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.image-slider .photo {
+  width: 100%; 
+}
+
+.photo-slider{
+  height: 400px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slide{
+  position: relative;
+  height:200px;
+  width: 250px;
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.slide img{
+  cursor: default;
+  width: 100%;
+  border-radius: 7px;
+  transition: opacity 400ms ease;
+} 
+
+.slide:hover div{
+  opacity: 1;
+}
+
+.slide:hover img{
+  opacity: 10%;
+}
+
+.slide div {
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+  top: 50%;      
+  left: 0;       
+  width: 100%;     
+  z-index: 2;     
+  opacity: 0;
+  transition: 400ms ease;
+}
+
+.logo{
+  height: 9em;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+/* HOME PAGE */
+.home section{
+  height: 100vh;
+}
+
+.our-mission .right-bottom, .ways-help .right-bottom  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+.home-page .right-bottom :is(p, h1),
+.our-mission .left-top :is(p, h2),
+.ways-help .left-top :is(p, h2),
+.team .left-top :is(p, h2) {
+  margin-left: 5%;
+  width: 60%;
+}
+
+.home-page button{
+  margin-left: 5%;
+}
+
+.our-mission button{
+  margin-top: 3%;
+  width: 60%;
+}
+
+.our-mission .right-bottom :is(p, h2, h3){
+  margin-left: 10%;
+  width: 60%;
+}
+
+.our-mission div, .ways-help div, .testimonials {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-mission .right-bottom  {
+  flex-direction: row;
+}
+
+.our-mission .left-top, .our-mission .right-bottom, 
+.ways-help .left-top, .team .left-top{
+  height: 100%;
+}
+
+.our-mission .right-bottom, .ways-help .left-top {
+  background-color: rgba(252,71,61,0.09);
+}
+
+.ways-help .right-bottom div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 90vh;
+  border: 1px solid green;
+  margin-left: auto;
+}
+
+.testimonials{
+  height: 60vh;
+}
+
+.testimonials p{
+  width: 100%;
+} 
+
+.testimonials h4{
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+}
+
+.testimonials .slide img{
+  width: 60%;
+  border-radius: 50%;
+} 
+
+.testimonials .slide {
+  margin-left: 0.5%;
+  height: 40vh;
+  border: 1px solid green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-involved {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.get-involved .right-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* HOME PAGE ENDS */
+
+/* ABOUT PAGE */
+
+.about {
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.team .left-top{
+
+  
+  background-color: aqua;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ .ceo .right-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  height: 100%;
+  width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .team-grid img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 1 / 3 / 2 / 4; }
+  .div4 { grid-area: 2 / 1 / 3 / 2; }
+  .div5 { grid-area: 2 / 2 / 3 / 3; }
+  .div6 { grid-area: 2 / 3 / 3 / 4; }
+  .div7 { grid-area: 3 / 1 / 4 / 2; }
+
+
+.about-mission .right-bottom, .about-mission .left-top{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.about-mission .right-bottom div{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.about-mission .left-top{
+  flex-direction: column;
+}
+
+.about-mission .right-bottom{
+   height: 50%;
+}
+
+.about-mission {
+  flex-direction: column;
+}
+
+.about .donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh
+}
+
+
+
+.about .photo-slider{
+  height: 300px;
+}
+
+.about .slide-track{
+  animation: scroll2 40s linear infinite;
+}
+
+.about .slide-next{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+} 
+
+@keyframes scroll2 {
+  0%{
+    transform: translateX(calc(-250px * 9));
+  }
+  100%{
+    transform: translateX(0);
   }
 }
+
+.about .slide{
+  padding: 2px;
+}
+
+
+.about .slide div {
+  top: 10%;      
+}
+
+
+/* ABOUT PAGE ENDS */
+
+/*DONATE PAGE*/
