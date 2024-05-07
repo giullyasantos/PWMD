@@ -1,25 +1,27 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
+import HomePhoto from '../images/homepage.webp';
 import Test from '../images/test.webp';
-
+import SideNavbar from '../components/navbar';
+import { Link } from 'react-router-dom';
 
 function Home() {
   return (
     <div className='home'>
+        <SideNavbar/>
         <section className='home-page'>
             <div className='left-top'>
                 <div className='image-slider'>
                     <div className='photo'>
-                        <img src={Test} alt="hey"/>
+                        <img src={HomePhoto} alt="hey"/>
                      </div>
                 </div>
             </div>
             <div className='right-bottom'>
                 <img className='logo' src={PWMD} alt="hey"/>
-                <h1>Raise awareness, educate and discuss major causes.</h1>
-                <p>The best advertisements committed to raising awareness about the major issues of our time.</p>
-                <button>Donate</button>
+                <h1>RAISE AWARENESS, EDUCATE AND ASSIST THE UNINSURED POPULATION.</h1>
+                <p>A Public Charity Non-Profit Organization, with a 501(c)(3), that financially assists the uninsured population to get an affordable healthcare.</p>
             </div>
         </section>
         <section className='our-mission'>

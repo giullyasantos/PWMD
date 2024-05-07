@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "rama-gothic-m", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
 section {
   cursor: default;
   width: 100%;
@@ -9,11 +15,22 @@ section {
   overflow: hidden;
 }
 h1, h2, h3 {
-  color: rgba(252,71,61,255);
+  font-family: "rama-gothic-m", sans-serif;
+  color: rgb(253, 54, 40);
 }
 
 p{
-  color: black;
+  color: #535353;
+}
+
+.btn{
+  text-decoration: none;
+  font-family: "rama-gothic-m";
+  letter-spacing: 1px;
+  font-size: 30px;
+  transition: 400ms ease;
+  border: none;
+  border-radius: 7px;
 }
 
 .left-top {
@@ -109,16 +126,49 @@ p{
 }
 
 h1{
-  font-size: 40px;
+  font-size: 60px;
 }
 
 h2{
   font-size: 30px;
 }
 
+.underline-animation{
+  display: inline-block;
+  position: relative;
+  color: #027593;
+}
+  
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  color: #027593;
+  background-color: #027593;
+  transform-origin: bottom right;
+  transition: transform 400ms ease;
+}
+  
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* HOME PAGE */
 .home section{
   height: 100vh;
+}
+
+.home-page .logo{
+  margin-left: 3%;
+}
+
+.home-page .right-bottom{
+  padding-left: 1%;
 }
 
 .our-mission .right-bottom, .ways-help .right-bottom  {
@@ -135,11 +185,12 @@ h2{
   width: 60%;
 }
 
-.home-page button{
+.home-page .btn{
+  margin-top:3%;
   margin-left: 5%;
 }
 
-.our-mission button{
+.our-mission .btn{
   margin-top: 3%;
   width: 60%;
 }
@@ -166,7 +217,12 @@ h2{
 }
 
 .our-mission .right-bottom, .ways-help .left-top {
-  background-color: rgba(252,71,61,0.09);
+  background-color: rgb(0, 120, 145);
+}
+
+.our-mission .right-bottom :is(h2, h3, p),
+.ways-help .left-top :is(h2, h3, p) {
+  color: white;
 }
 
 .ways-help .right-bottom div{
@@ -220,6 +276,9 @@ h2{
   justify-content: center;
   align-items: center;
 }
+
+
+
 /* HOME PAGE ENDS */
 
 /* ABOUT PAGE */
@@ -348,3 +407,126 @@ h2{
 /* ABOUT PAGE ENDS */
 
 /*DONATE PAGE*/
+
+
+/* NAVBAR */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 80; 
+  pointer-events: none;
+}
+
+.sidebar.open + .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar {
+  z-index: 90;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: -36vw;
+  width: 36vw;
+  height: 100%;
+  background-color: rgb(253, 54, 40);
+  transition: left 500ms ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.toggle-btn {
+  height: 100%;
+  width: 70px;
+  position: absolute;
+  left: 36vw;
+  background-color: rgb(253, 54, 40);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  transition: 500ms ease;
+}
+
+
+.sidebar.open .toggle-btn {
+  left: 36vw;
+}
+
+.nav ul {
+  font-family: "rama-gothic-m", sans-serif;
+  letter-spacing: 0.1vw;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav li {
+  margin: 20px 0;
+}
+
+.nav li a {
+  transition: 400ms ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.nav li.active a {
+  color: #027593; 
+}
+
+.nav li a:hover{
+  color: #027593;
+}
+
+.social-media{
+  display: flex;
+}
+
+.social-media path{
+  transition: 400ms ease;
+}
+
+.social-media div:hover path{
+  fill: #027593;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sidebar.open {
+    top: 0;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    height: 70px;
+    top: 100vh;
+    left: 0;
+  }
+
+  .sidebar.open .toggle-btn {
+    top: 90vh;
+    left: 0;
+  }
+
+}
+

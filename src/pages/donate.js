@@ -2,11 +2,13 @@ import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
 import Test from '../images/test.webp';
+import SideNavbar from '../components/navbar';
 
 
 function Donate() {
   return (
     <div className='donate'>
+        <SideNavbar/>
         <section className='donate-page'>
             <div className='left-top'>
                 <h1>Your contribution makes a Difference</h1>

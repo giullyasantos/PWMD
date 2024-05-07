@@ -2,11 +2,13 @@ import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
 import Test from '../images/test.webp';
+import SideNavbar from '../components/navbar';
 
 
 function About() {
   return (
     <div className='about'>
+        <SideNavbar/>
         <h1>Who Are We?</h1>
         <section className='team'>
             <div className='left-top'>
