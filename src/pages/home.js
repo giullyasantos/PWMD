@@ -21,7 +21,7 @@ function Home() {
             <div className='right-bottom'>
                 <img className='logo' src={PWMD} alt="hey"/>
                 <h1>RAISE AWARENESS, EDUCATE AND ASSIST THE UNINSURED POPULATION.</h1>
-                <p>A Public Charity Non-Profit Organization, with a 501(c)(3), that financially assists the uninsured population to get an affordable healthcare.</p>
+                <p>A 501(c)(3) public charity nonprofit organization dedicated to providing financial assistance for affordable healthcare to the uninsured population.</p>
             </div>
         </section>
         <section className='our-mission'>
@@ -34,9 +34,11 @@ function Home() {
                 <div className='description'>
                     <h2>+25,000 campaigns</h2>
                     <h3>Discover the best engaged advertisements searchable by theme in our database.</h3>
-                    <p>Global Warming</p>
-                    <p>Global Warming</p>
-                    <p>Global Warming</p>
+                    <div className='accomplishments'>
+                      <p>Global Warming</p>
+                      <p>Global Warming</p>
+                      <p>Global Warming</p>
+                    </div>
                 </div>
                 <div className='image-slider'>
                     <div className='photo'>
