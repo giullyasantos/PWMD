@@ -28,7 +28,7 @@ function Home() {
             <div className='left-top'>
                 <h2>Our Mission</h2>
                 <p>The fight against poverty, exclusion, global warming, the protection of biodiversity, the prevention of diseases, the defense of men's and women's rights, etc. are issues that concern us all. And yet, it is difficult to get citizens to adhere to these themes. However, it is by popularizing these issues and making them accessible to as many people as possible that mentalities will evolve, allowing the construction of a fairer, more united, more equitable and more sustainable world .</p> 
-                <button>Learn More</button>           
+                <button className='btn'>Learn More</button>           
             </div>
             <div className='right-bottom'>
                 <div className='description'>

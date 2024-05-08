@@ -5,7 +5,6 @@ import Home from './pages/home';
 import About from './pages/about';
 import Donate from './pages/donate';
 import FAQ from './pages/faq';
-import Gallery from './pages/gallery';
 import Volunteer from './pages/volunteer';
 import Projects from './pages/projects';
 
@@ -20,7 +19,6 @@ function App() {
                     <Route path="/about" element={<About/>} />
                     <Route path="/donate" element={<Donate/>} />
                     <Route path="/faq" element={<FAQ/>} />
-                    <Route path="/gallery" element={<Gallery/>} />
                     <Route path="/projects" element={<Projects/>} />
                     <Route path="/volunter" element={<Volunteer/>} />
                     {/* other routes can also be added here */}
