@@ -1,0 +1,764 @@
+/* NAVBAR */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 80; 
+  pointer-events: none;
+}
+
+.sidebar.open + .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar {
+  z-index: 90;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: -36vw;
+  width: 36vw;
+  height: 100%;
+  background-color: rgb(253, 54, 40);
+  transition: left 500ms ease;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.toggle-btn {
+  height: 100%;
+  width: 70px;
+  position: absolute;
+  left: 36vw;
+  background-color: rgb(253, 54, 40);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+  transition: 500ms ease;
+}
+
+
+.sidebar.open .toggle-btn {
+  left: 36vw;
+}
+
+.nav ul {
+  font-family: "rama-gothic-m", sans-serif;
+  letter-spacing: 0.1vw;
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav li {
+  margin: 20px 0;
+}
+
+.nav li a {
+  transition: 400ms ease;
+  color: #fff;
+  text-decoration: none;
+  font-size: 35px;
+}
+
+.nav li.active a {
+  color: #027593; 
+}
+
+.nav li a:hover{
+  color: #027593;
+}
+
+.social-media{
+  display: flex;
+}
+
+.social-media path{
+  transition: 400ms ease;
+}
+
+.social-media div:hover path{
+  fill: #027593;
+}
+
+@media (max-width: 1024px) {
+  .sidebar {
+    top: -100vh;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .sidebar.open {
+    top: 0;
+  }
+
+  .toggle-btn {
+    width: 100%;
+    height: 70px;
+    top: 100vh;
+    left: 0;
+  }
+
+  .sidebar.open .toggle-btn {
+    top: 90vh;
+    left: 0;
+  }
+
+}
+/* NAVBAR ENDS HERE*/
+
+@font-face {
+  font-family: "rama-gothic-m", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+section {
+  cursor: default;
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 2;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "rama-gothic-m", sans-serif;
+  color: rgb(253, 54, 40);
+}
+
+p{
+  color: #535353;
+}
+
+.btn{
+  text-decoration: none;
+  font-family: "rama-gothic-m";
+  letter-spacing: 1px;
+  font-size: 30px;
+  transition: 400ms ease;
+  border: none;
+  border-radius: 7px;
+}
+
+.left-top {
+  width: 40%;
+}
+
+.right-bottom {
+  width: 60%;
+}
+
+.image-slider {
+  width: 100%; 
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+.image-slider .photo {
+  width: 100%; 
+}
+
+.photo-slider{
+  height: 400px;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+.slide-track:hover{
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slide{
+  position: relative;
+  height:200px;
+  width: 250px;
+  display: flex;
+  justify-content: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.slide img{
+  cursor: default;
+  width: 100%;
+  border-radius: 7px;
+  transition: opacity 400ms ease;
+} 
+
+.slide:hover div{
+  opacity: 1;
+}
+
+.slide:hover img{
+  opacity: 50%;
+}
+
+.slide div {
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+  top: 50%;      
+  left: 0;       
+  width: 100%;     
+  z-index: 2;     
+  opacity: 0;
+  transition: 400ms ease;
+}
+
+.logo{
+  height: 9em;
+}
+
+h1{
+  font-size: 60px;
+}
+
+h2{
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 35px;
+}
+
+.underline-animation{
+  display: inline-block;
+  position: relative;
+  color: #027593;
+}
+  
+.underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  color: #027593;
+  background-color: #027593;
+  transform-origin: bottom right;
+  transition: transform 400ms ease;
+}
+  
+.underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+@media (max-width: 1024px) {
+  section{
+    flex-direction: column;
+  }
+
+  .left-top, .right-bottom{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 40px;
+  }
+
+  h2{
+    font-size: 7vw;
+  }
+
+  .logo{
+    height: 6em;
+    padding-left: 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 10vw;
+  }
+
+  h2{
+    font-size: 10vw;
+  }
+
+  .logo{
+    height: 20vw;
+    padding-left: 5%;
+  }
+
+  p{
+    font-size: 3.5vw;
+  }
+  
+}
+
+/* HOME PAGE */
+.home section{
+  height: 100vh;
+}
+
+.home-page .logo{
+  margin-left: 3%;
+}
+
+.home-page .right-bottom{
+  padding-left: 1%;
+}
+
+.our-mission .right-bottom, .ways-help .right-bottom, 
+.donate-info .right-bottom, .impact-volunteer .right-bottom  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+.home-page .right-bottom :is(p, h1),
+.our-mission .left-top :is(p, h2),
+.ways-help .left-top :is(p, h2),
+.team .left-top :is(p, h2),
+.donate-info .left-top :is(p, h2), 
+.impact-volunteer .left-top :is(p, h2){
+  margin-left: 5%;
+  width: 60%;
+}
+
+.our-mission .btn{
+  margin-top: 3%;
+  width: 60%;
+}
+
+.our-mission .right-bottom :is(p, h2, h3){
+  margin-left: 10%;
+  width: 60%;
+}
+
+.our-mission div, .ways-help div, .testimonials, .donate-info div, .impact-volunteer div {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-mission .right-bottom  {
+  flex-direction: row;
+}
+
+.our-mission .left-top, .our-mission .right-bottom, 
+.ways-help .left-top, .team .left-top, .donate-info .left-top, .impact-volunteer .left-top{
+  height: 100%;
+}
+
+.our-mission .right-bottom, .ways-help .left-top {
+  background-color: rgb(0, 120, 145);
+}
+
+.our-mission .right-bottom :is(h2, h3, p),
+.ways-help .left-top :is(h2, h3, p) {
+  color: white;
+}
+
+.ways-help .right-bottom div, .donate-info .right-bottom div, .impact-volunteer .right-bottom div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90vh;
+  border: 1px solid green;
+  margin-left: auto;
+}
+
+.testimonials{
+  height: 60vh;
+}
+
+.testimonials p{
+  width: 100%;
+} 
+
+.testimonials h4{
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+}
+
+.testimonials .slide img{
+  width: 60%;
+  border-radius: 50%;
+} 
+
+.testimonials .slide {
+  margin-left: 0.5%;
+  height: 40vh;
+  border: 1px solid green;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.get-involved {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+}
+
+.get-involved .right-bottom{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-mission .accomplishments {
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .home-page .logo{
+    margin-left: 0;
+  }
+  
+  .home-page .right-bottom{
+    padding-left: 0;
+  }
+  
+  .home-page .right-bottom :is(p, h1){
+    margin-left: 9%;
+    width: 70%;
+  }
+   
+  .home-page {
+    flex-direction: row;
+
+  }
+
+  .home-page .left-top {
+    width: 50%;
+  }
+  
+  .home-page .right-bottom {
+    width: 50%;
+  }
+  
+  .our-mission .left-top :is(p, h2),
+  .ways-help .left-top :is(p, h2),
+  .team .left-top :is(p, h2),
+  .donate-info .left-top :is(p, h2),
+  .impact-volunteer .left-top :is(p, h2) {
+    width: 80%;
+  }
+
+  .ways-help .right-bottom div, .donate-info .right-bottom div, .impact-volunteer .right-bottom div{
+    height: 100%;
+  }
+  
+  .our-mission .left-top{
+    display: none;
+  }
+
+  .our-mission .right-bottom{
+    flex-direction: column;
+  }
+  
+  .our-mission .description :is(h3, h2, p){
+    width: 100%;
+  }
+  
+  .our-mission .accomplishments {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .testimonials .slide {
+    height: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-page .left-top {
+    display: none;
+  }
+
+  .home-page .right-bottom {
+    width: 100%;
+  }
+}
+/* HOME PAGE ENDS */
+
+/* ABOUT PAGE */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.team {
+  background-color: #027593;
+  justify-content: center;
+  display: grid;
+  max-width: 100vw; 
+  max-height: 100vh; 
+  grid-template-columns: repeat(3, 30vh);
+  grid-template-rows: repeat(3, 30vh);
+}
+
+.team .div1 { grid-area: 1 / 1 / 2 / 2; }
+.team .div2 { grid-area: 2 / 1 / 3 / 2; }
+.team .div3 { grid-area: 3 / 1 / 4 / 2; }
+.team .div4 { grid-area: 1 / 3 / 2 / 4; }
+.team .div5 { grid-area: 2 / 3 / 3 / 4; }
+.team .div6 { grid-area: 3 / 3 / 4 / 4; }
+
+.team .div7 { 
+  grid-area: 1 / 2 / 4 / 3; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 20vh;
+  z-index: -1;
+  background-color: white;
+}
+
+.team .div7 p{
+  padding-left: 20%;
+  padding-right: 20%;
+
+}
+
+.team .div8 { 
+  grid-area: 3 / 2 / 4 / 3; 
+  background-color: white; 
+
+}
+
+.team img{
+  height: 100%;
+  width: 100%;
+}
+
+.about-mission {
+  flex-direction: column;
+}
+
+.about-mission .left-top p, .ceo p, .donate-home p{
+  width: 60%;
+}
+
+.about-mission .left-top, .about .donate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 7%;
+  width: 100%;
+}
+
+.about .photo-slider{
+  height: 300px;
+}
+
+.about .slide-track{
+  animation: scroll2 40s linear infinite;
+}
+
+.about .slide-next{
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+} 
+
+@keyframes scroll2 {
+  0%{
+    transform: translateX(calc(-250px * 9));
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.about .slide{
+  padding: 2px;
+}
+
+.about .slide div {
+  top: 10%;      
+}
+
+.about .donate{
+  background-color: #027593;
+  height: 30vh;
+}
+
+.about .donate h1{
+  color: white;
+}
+
+.ceo .left-top, .ceo .right-bottom,
+.donate-home .left-top, .donate-home .right-bottom{
+  width: 50vw;
+}
+
+.ceo .right-bottom, .donate-home .right-bottom{
+  margin-left: 100px;
+}
+
+.ceo img, .donate-home img{
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .team {
+    margin-top: 70px;
+    grid-template-columns: repeat(3, 20vh);
+    grid-template-rows: repeat(3, 30vh);
+    grid-column-gap: 3vw;
+    grid-row-gap: 0;
+  }
+
+  .team .div7 h2, .ceo h2, .about-mission h2, .donate-home h2{
+    font-size: 5vh;
+  }
+  
+  .team .div7 p, .ceo p, .donate-home p{
+    font-size: 10px;  
+  }
+  
+  .ceo, .donate-home {
+    flex-direction: row;
+  }  
+}
+
+@media (max-width: 768px) {
+  .team .div7 p, .ceo p, .donate-home p{
+    font-size: 15px;
+  }
+  
+  .about-mission p{
+    font-size: 17px;
+  }
+
+  .ceo, .donate-home{
+    flex-direction: column;
+  }
+
+  .ceo .left-top, .ceo .right-bottom,
+  .donate-home .left-top, .donate-home .right-bottom{
+    width: 100%;
+  }
+
+}
+
+/* ABOUT PAGE ENDS */
+
+/*DONATE PAGE*/
+.sponsors{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 0.3%;
+  flex-direction: column;
+  background-color: #027593;
+}
+
+.donate-page p{
+  width: 60%;
+}
+
+.donate-page .left-top{
+  padding-left: 10%;
+}
+
+.sponsors .photo-slider{
+  height: 300px;
+}
+
+.sponsors h2 {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+ .donate-page .left-top{
+    padding-top: 10%;
+  }
+ .donate-page .right-bottom{
+    height: 50%;
+    width: 100%;
+    display: flex;  /* Ensures the container is a flexbox container */
+    align-items: center;  /* Centers the image vertically */
+    justify-content: center;  /* Centers the image horizontally */
+    overflow: hidden;  /* Prevents the image from overflowing its container */
+  }
+ .donate-page .right-bottom img{
+    height: 100%;
+    object-fit: cover; 
+  }
+}
+/*DONATE PAGE ENDS*/
+/*VOLUNTEER PAGE*/
+.second .slide-track{
+  animation: scroll2 40s linear infinite;
+}
+
+.volunteer-home .slide-track:hover{
+  animation-play-state: paused;
+}
+
+.volunteer-home {
+  flex-direction: column;
+}
+
+.volunteer-home p{
+  width: 60%;
+}
+
+.volunteer-home .photo-slider{
+  height: 250px;
+}
+
+.volunteer-home .slide:hover img{
+  opacity: 1;
+}
+
+.impact-volunteer {
+  margin-top: 7%;
+}
