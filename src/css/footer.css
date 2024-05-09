@@ -1,0 +1,149 @@
+/*FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  margin-left: 70px;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  background-color:rgb(0, 0, 0, 0.05);
+  color: rgb(2,117,147);
+}
+
+.footer .logo{
+  height: 6em;
+}
+
+.footer .side1{
+  width: 50%;
+  margin-left: 5%;
+}
+
+.social-media {
+  margin-left: 1%;
+}
+
+.social-media svg{
+  height: 50%;
+}
+
+#address, #giullya{
+  color: currentColor;
+  text-decoration: underline;
+  transition: color 400ms ease;
+}
+
+.footer #address{
+  font-size: 0.8em; 
+  margin-left: 18px;
+}
+
+.footer #address:visited, #giullya:visited{
+  color: currentColor;
+}
+
+.footer #address:hover, #giullya:hover, .social-media div:hover path  {
+  color: rgb(253, 54, 40);
+  fill: rgb(253, 54, 40);
+}
+
+.footer .side1 p{
+  width: 70%;
+  margin-left: 2%;
+  color: rgb(2,117,147);
+}
+
+.selections {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.footer h4{
+  color: rgb(253, 54, 40);
+}
+
+.footer p{
+  font-size: 13px;
+}
+
+.selections .first{
+  display: flex;
+  width: 100%;
+}
+
+.selections .first div{
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+  font-size: 14px;
+  width: 25%;
+  cursor: pointer;
+}
+
+.selections .underline-animation::after{
+  width: 30%;
+}
+
+.selections #abt-us .underline-animation::after{
+  width: 40%;
+}
+
+.selections #get-help .underline-animation::after{
+  width: 80%;
+}
+
+@media (max-width: 1024px) {
+  .footer .logo{
+    margin-left: 0;
+    padding-left: 0;
+  }  
+
+  .footer{ 
+    padding-bottom: 2em;
+  }
+
+  .footer, .side1 {
+    flex-direction: column;
+    padding-left: 0.25em;
+    margin-left: 0;
+    
+  }
+
+  .footer .side1 p, .footer #address{
+    width: 70vw;
+  }
+
+  .social-media svg{
+    height: 1.5em;
+    margin-bottom: 0.75em;
+  }  
+
+  .selections {
+    justify-content: center;
+    gap: 1em;
+    width: 100%;
+  }
+
+  .selections .first{
+    padding-left:8%;
+  }
+
+  .selections .first div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  .selections h4, .selections .underline-animation{
+    font-size: 0.75em;
+  }
+
+  .footer #address{
+    white-space: pre;
+    margin-left: 0.25em;
+  }
+}

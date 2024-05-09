@@ -10,8 +10,9 @@ import nilton from '../images/home/testimonials/nilton.webp';
 import nubia from '../images/home/testimonials/nubia.webp';
 import paula from '../images/home/testimonials/paula.webp';
 import soledad from '../images/home/testimonials/soledad.webp';
-
-
+import financial from '../images/home/financial.webp';
+import fundraiser from '../images/home/fundraiser.webp';
+import healtheducation from '../images/home/healthevent.webp';
 
 import Test from '../images/test.webp';
 import SideNavbar from '../components/navbar';
@@ -39,26 +40,26 @@ function Home() {
             <div className='left-top'>
                 <h2>Our Mission</h2>
                 <p>At People Who Make A Difference, we envision a world where no individual is deprived of healthcare due to lack of insurance. Our mission is clear: to remove financial barriers to healthcare for the uninsured by providing essential support and resources. </p> 
-                <div className='end'>
-                    <button> Learn More
+                <div className='end' style={{ marginTop: '5%' }}>
+                    <a href='/about'> Learn More
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
                                 <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
                             </svg>
                         </div>
-                    </button>
+                    </a>
                  </div>    
             </div>
             <div className='right-bottom'>
                 <div className='description'>
-                    <h2>+25,000 campaigns</h2>
-                    <h3>Healthcare Access: A Privilege Not Everyone Can Afford</h3>
+                    <h2>210,566 Uninsured Individuals in Orange County, FL as of 2021</h2>
+                    <h3>Providing Financial Aid for Essential Health Services Allowed Us To:​</h3>
                     <div className='accomplishments'>
                     <ul>
-                        <li>Financial Assistance</li>
-                        <li>Preventive Healthcare</li>
-                        <li>Health Education</li>
+                        <li>Reduce Mortality and Premature Death</li>
+                        <li>Lower Cancer Mortality Rates</li>
+                        <li>Decreased Medical Expenses</li>
                     </ul>
 
                     </div>
@@ -73,21 +74,28 @@ function Home() {
         <section className='ways-help'>
             <div className='left-top'>
                 <h2>Making a Difference</h2>
-                <p>The fight against poverty, exclusion, global warming, the protection of biodiversity, the prevention of diseases, the defense of men's and women's rights, etc. are issues that concern us all. And yet, it is difficult to get citizens to adhere to these themes. However, it is by popularizing these issues and making them accessible to as many people as possible that mentalities will evolve, allowing the construction of a fairer, more united, more equitable and more sustainable world .</p>
-                <p>To participate in this effort, the ACT Responsible association identifies, brings together and disseminates the best major cause communication campaigns created each year around the world. Advertising simply expresses complex issues . Associations need this strength to make themselves known, raise awareness, generate donations, demonstrate their actions…</p>
+                <p>We provide crucial financial support to uninsured individuals, enabling them to access necessary healthcare services without the strain of prohibitive costs.<br/><br/> Our commitment to funding preventive care reduces the risk of severe health complications from untreated conditions, thus lowering long-term healthcare expenses for both individuals and the broader community.<br/><br/> Additionally, we empower the uninsured by educating them about available healthcare options and advocate for comprehensive policy changes to improve healthcare accessibility and affordability for all.
+    		</p>
+		<div className='end' style={{ marginTop: '5%' }}>
+		  <a href='/donate'> Get Involved
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div className='right-bottom'>
-                <div>
+                <div style={{ backgroundImage: `url(${financial})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <h3>Financial Assistance</h3>
-                    <button>Learn More</button>
                 </div>
-                <div>
-                    <h3>Food</h3>
-                    <button>Learn More</button>
+                <div style={{ backgroundImage: `url(${fundraiser})`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+                    <h3>Fundraisers</h3>
                 </div>
-                <div>
-                    <h3>Education</h3>
-                    <button>Learn More</button>
+                <div style={{ backgroundImage: `url(${healtheducation})`, backgroundSize: 'cover', backgroundPosition: 'right center' }}>
+                    <h3>Health Education</h3>
                 </div>
 
             </div>
@@ -109,7 +117,7 @@ function Home() {
                     <div className='slide'>
                         <img id='helaine'src={helaine} alt="Helaine's Review People Who Make A Difference"/>
                         <h4>Helaine</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
+                        <p> After becoming handicapped from a motorcycle accident in my early twenties, I needed a new wheelchair in 2019. My cousin in Orlando, FL, told the PWMD Foundation.</p>
                     </div>
                     <div className='slide'>
                         <img src={nilton} alt="Nilton's Review People Who Make A Difference"/>
@@ -131,7 +139,6 @@ function Home() {
                         <h4>Soledad</h4>
                         <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
                     </div>
-
                     <div className='slide'>
                         <img id='alessandra' src={alessandra} alt="Alessandra's Review People Who Make A Difference"/>
                         <h4>Alessandra</h4>
@@ -144,48 +151,76 @@ function Home() {
                     </div>
                     <div className='slide'>
                         <img id='helaine'src={helaine} alt="Helaine's Review People Who Make A Difference"/>
-                        <h4>Giullya Santos</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
+                        <h4>Helaine</h4>
+                        <p> After becoming handicapped from a motorcycle accident in my early twenties, I needed a new wheelchair in 2019. My cousin in Orlando, FL, told the PWMD Foundation.</p>
                     </div>
                     <div className='slide'>
                         <img src={nilton} alt="Nilton's Review People Who Make A Difference"/>
-                        <h4>Giullya Santos</h4>
+                        <h4>Nilton</h4>
                         <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
                     </div>
                     <div className='slide'>
                         <img src={nubia} alt="Nubia's Review People Who Make A Difference"/>
-                        <h4>Giullya Santos</h4>
+                        <h4>Nubia</h4>
                         <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
                     </div>
                     <div className='slide'>
                         <img src={paula} alt="Paula's Review People Who Make A Difference"/>
-                        <h4>Giullya Santos</h4>
+                        <h4>Paula</h4>
                         <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
                     </div>
                     <div className='slide'>
                         <img src={soledad} alt="Soledad's Review People Who Make A Difference"/>
-                        <h4>Giullya Santos</h4>
+                        <h4>Soledad</h4>
+                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
+                    </div>
+                    <div className='slide'>
+                        <img id='alessandra' src={alessandra} alt="Alessandra's Review People Who Make A Difference"/>
+                        <h4>Alessandra</h4>
+                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
+                    </div>
+                    <div className='slide'>
+                        <img src={claudia} alt="Claudia's Review People Who Make A Difference"/>
+                        <h4>Claudia</h4>
                         <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
                     </div>
                 </div>
             </div>
-            <button> Get Help
-                    <div class="icon">
-                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
-                         </svg>
-                     </div>
-                </button>
         </section>
-        <div className='get-involved'>
-           <h2>Get Involved</h2>
-           <p>Empower the Comunity</p>
-           <div className='right-bottom'>
-                <button>Donate</button>
-                <button>Volunteer</button>
-           </div>
-        </div>
+        <section className='call-to-action'>
+<div className='get-involved'>
+            <lord-icon 
+                src="https://cdn.lordicon.com/wzrwaorf.json"
+                trigger="in"
+                delay="1500"
+                state="in-reveal"
+                colors="primary:#fd3628,secondary:#027593"
+                style={{ width: '250px', height: '250px' }}
+            ></lord-icon>
+	  <div>
+	    <h2>Get Involved</h2>
+            <p id='first-p'>Your support is crucial. Whether you choose to donate or volunteer, you help us drive vital changes and provide essential services. Let's empower our community together.</p>
+          </div>
+          <p id='second-p'>Your support is crucial. Whether you choose to donate or volunteer, you help us drive vital changes and provide essential services. Let's empower our community together.</p>
+</div>
+<div className='next-to-each-other'>
+<a href='/donate'> Donate
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24"><path d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001.01 0 .002-.001.002-.001h.001l.002-.001.003-.001.002-.001.002-.001.003-.001.002-.001c.003 0 .001-.001.002-.001l.003-.002.002-.001.002-.001.003-.001.002-.001h.001l.002-.001h.001l.002-.001.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485.081.065.163.139.247.222l.707.707.707-.707c.084-.083.166-.157.247-.222.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z"/></svg>
+                        </div>
+                    </a>
+
+<a href='/volunteer'> Volunteer
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="800px" width="800px" version="1.2" baseProfile="tiny" id="Layer_1" viewBox="0 0 256 256" >
+<path d="M216.2,92.5c-5.2-5.3-13.8-5.4-19-0.1L157.8,134l-0.3,0.3c-25.5,0.1-46.2,16.8-46.2,37.3h-5.8c0-23.6,23.1-42.8,51.6-43.1  l-0.1-19.4c0,0-0.1-85.4-0.1-85.5c-0.7-5.8-5.6-10.3-11.7-10.3c-6.5,0-11.7,5.3-11.7,11.7c0,0.2,0,72.9,0,72.9l-5.2,0.2l-0.1-81.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8v81h-5.6l0.1-63.6c0-6.5-5.3-11.7-11.8-11.7S75.7,28,75.7,34.4V98h-5.2l0.1-34.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8c0,108.4,0,108.4,0,111c0,13.2,6.8,24.4,16.2,28.1v48.4h0.2v0.4l81.2-0.4v-51.1  c2.5-0.9,5.1-2,7.6-3.3c15.4-7.9,26.1-20.3,29.5-32.5c2.9-4.3,36.8-56.2,36.8-56.2C221.4,103.7,220.6,96.9,216.2,92.5z"/>
+</svg>
+                        </div>
+                    </a>
+
+</div>
+
+        </section>
         <footer><Footer/></footer>
     </div>
   );
