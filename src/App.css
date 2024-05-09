@@ -145,16 +145,59 @@ h1, h2, h3 {
 p{
   color: #535353;
 }
-
-.btn{
-  text-decoration: none;
-  font-family: "rama-gothic-m";
-  letter-spacing: 1px;
-  font-size: 30px;
-  transition: 400ms ease;
+section button {
+  background: rgb(253, 54, 40);
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 0.9em;
   border: none;
-  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em rgb(158, 33, 24);
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
 }
+
+section button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(158, 33, 24);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+section button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+section button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: rgb(158, 33, 24);
+}
+
+section button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+section button:active .icon {
+  transform: scale(0.95);
+}
+
 
 .left-top {
   width: 40%;
@@ -337,8 +380,14 @@ h3 {
   margin-left: 3%;
 }
 
-.home-page .right-bottom{
-  padding-left: 1%;
+.home-page .right-bottom, .donate-home .right-bottom{
+  transform: 400ms ease;
+  animation: slide-left 1.5s ease-in-out; 
+}
+
+.home-page .left-top, .donate-home .left-top{
+  animation: slide-right 1.5s ease-in-out; 
+  transform: 400ms ease;
 }
 
 .our-mission .right-bottom, .ways-help .right-bottom, 
@@ -358,15 +407,20 @@ h3 {
   width: 60%;
 }
 
-.our-mission .btn{
-  margin-top: 3%;
-  width: 60%;
-}
-
 .our-mission .right-bottom :is(p, h2, h3){
   margin-left: 10%;
   width: 60%;
 }
+
+.our-mission .left-top{
+  justify-content: start;
+  padding-top: 20%;
+}
+
+.our-mission .left-top button{
+  margin-top: 40px;
+}
+
 
 .our-mission div, .ways-help div, .testimonials, .donate-info div, .impact-volunteer div {
   flex-direction: column;
@@ -398,13 +452,14 @@ h3 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 90vh;
-  border: 1px solid green;
+  height: 100vh;
+  border-left: 3.5px solid rgb(0, 120, 145);
   margin-left: auto;
 }
 
 .testimonials{
   height: 60vh;
+  border-top: 7px solid rgb(0, 120, 145);
 }
 
 .testimonials p{
@@ -415,28 +470,51 @@ h3 {
   margin: 0;
   margin-top: 5%;
   padding: 0;
+  font-family: "rama-gothic-m";
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+
+.testimonials h2{
+  color: rgb(253, 54, 40);
 }
 
 .testimonials .slide img{
-  width: 60%;
-  border-radius: 50%;
-} 
+  height: 30vh;
+  object-fit:cover;
+}
+
+.testimonials .slide  #alessandra, .testimonials .slide  #helaine{
+  object-position: top; /* Aligns the top of the image with the top of the container */
+
+}
 
 .testimonials .slide {
   margin-left: 0.5%;
-  height: 40vh;
-  border: 1px solid green;
+  height: 50vh;
+  padding-top: 20px;
+  border-radius: 7px;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
+  overflow: visible;
 }
 
+.testimonials .photo-slider{
+  height: auto;
+}
 .get-involved {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 40vh;
+}
+
+.left-top .end{
+  display: flex;
+  align-items: start;
+  width: 55%;
 }
 
 .get-involved .right-bottom{
@@ -508,6 +586,11 @@ h3 {
 
   .testimonials .slide {
     height: 40%;
+  }
+
+  .slide-track:hover, .slide-track .slide:focus , 
+  .volunteer-home .slide-track:hover, .volunteer-home .slide-track .slide:focus{
+    animation-play-state:running;
   }
 }
 
@@ -723,10 +806,10 @@ h3 {
  .donate-page .right-bottom{
     height: 50%;
     width: 100%;
-    display: flex;  /* Ensures the container is a flexbox container */
-    align-items: center;  /* Centers the image vertically */
-    justify-content: center;  /* Centers the image horizontally */
-    overflow: hidden;  /* Prevents the image from overflowing its container */
+    display: flex; 
+    align-items: center;  
+    justify-content: center;  
+    overflow: hidden;  
   }
  .donate-page .right-bottom img{
     height: 100%;
@@ -762,3 +845,141 @@ h3 {
 .impact-volunteer {
   margin-top: 7%;
 }
+/*VOLUNTEER PAGE ENDS*/
+/*FOOTER */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: row;
+  margin-left: 70px;
+  padding-bottom: 6%;
+  padding-top: 6%;
+  background-color: rgb(253, 54, 40, 0.1);
+}
+
+.selections {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+}
+
+.footer .side1{
+  width: 50%;
+  margin-left: 5%;
+}
+
+.footer .side1 p{
+  width: 70%;
+  margin-left: 2%;
+}
+
+.social-media {
+  margin-left: 1%;
+}
+
+.social-media svg{
+  height: 50%;
+}
+
+.footer p{
+  font-size: 13px;
+}
+
+.selections .first{
+  display: flex;
+  width: 100%;
+}
+
+.selections .first div{
+  width: 25%;
+}
+
+@keyframes slide-right {
+  0%{
+    transform: translateX(-40%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
+
+
+@keyframes slide-left {
+  0%{
+    transform: translateX(60%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  .footer .logo{
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .footer {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer, .side1 {
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .footer .side1{
+    width: 100%;
+    margin-left: 0;
+  }
+  
+  .footer .side1 p{
+    width: 80%;
+  }
+
+  .side1, .social-media, .selections .first{
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social-media svg{
+    height: 25px;
+  }  
+
+  .selections {
+    justify-content: center;
+    gap: 0px;
+    width: 100%;
+  }
+
+  .selections .first{
+    align-items: start;
+    width: 90%;
+  
+  }
+  
+  .selections .first div{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .footer :is(p,h4){
+    font-size: 12px;
+  }
+
+  .side1 img{
+    height: 100px;
+  }
+
+
+ }

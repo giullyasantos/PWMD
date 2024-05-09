@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
 import Test from '../images/test.webp';
 import SideNavbar from '../components/navbar';
-
+import Footer from '../components/footer';
 
 function GetHelp() {
   return (
@@ -26,7 +26,7 @@ function GetHelp() {
 
             </div>
         </section>
-
+        <footer><Footer/></footer>
     </div>
   );
 }
