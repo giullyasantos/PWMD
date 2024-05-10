@@ -64,13 +64,18 @@ function Home() {
 
                     </div>
                 </div>
-                <div className='image-slider'>
-                    <div className='photo'>
+                <div className='image-slider' id='first'>
+                   
                         <img src={Event2011} alt="TESTIMONIALS HERE"/>
-                     </div>
+
                 </div>
             </div>
         </section>
+        <div className='extra'>
+         <div className='image-slider' id='second'>
+              <img src={Event2011} alt="TESTIMONIALS HERE"/>
+         </div>
+        </div>
         <section className='ways-help'>
             <div className='left-top'>
                 <h2>Making a Difference</h2>
@@ -189,13 +194,12 @@ function Home() {
         </section>
         <section className='call-to-action'>
 <div className='get-involved'>
-            <lord-icon 
+            <lord-icon id='icon-talk'
                 src="https://cdn.lordicon.com/wzrwaorf.json"
                 trigger="in"
                 delay="1500"
                 state="in-reveal"
                 colors="primary:#fd3628,secondary:#027593"
-                style={{ width: '250px', height: '250px' }}
             ></lord-icon>
 	  <div>
 	    <h2>Get Involved</h2>

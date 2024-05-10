@@ -8,6 +8,7 @@ import Footer from '../components/footer';
 
 function About() {
   return (
+  <div>
     <div className='about'>
         <SideNavbar/>
         <section className='team'>
@@ -101,7 +102,8 @@ function About() {
                 </p>        
             </div>
         </section>
-        <footer><Footer/></footer>
+      </div>
+      <footer><Footer/></footer>
     </div>
   );
 }
