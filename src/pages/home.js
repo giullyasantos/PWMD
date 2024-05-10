@@ -78,11 +78,19 @@ function Home() {
         </div>
         <section className='ways-help'>
             <div className='left-top'>
-                <h2>Making a Difference</h2>
-                <p>We provide crucial financial support to uninsured individuals, enabling them to access necessary healthcare services without the strain of prohibitive costs.<br/><br/> Our commitment to funding preventive care reduces the risk of severe health complications from untreated conditions, thus lowering long-term healthcare expenses for both individuals and the broader community.<br/><br/> Additionally, we empower the uninsured by educating them about available healthcare options and advocate for comprehensive policy changes to improve healthcare accessibility and affordability for all.
+                <h2>Need Help? We're Here for You.</h2>
+                <p>Facing healthcare challenges without insurance can be overwhelming. At People Who Make A Difference, we understand the struggle and are dedicated to providing support. If you are uninsured and need assistance with healthcare costs, we encourage you to reach out.
     		</p>
+                <p style={{fontWeight: 'bold'}}>Take the first step towards accessible healthcare:</p>
+		<ul>
+                  <li>Learn more about our eligibility requirements and application process.</li>
+                  <li>Explore our available resources and upcoming events.</li>
+                  <li>Contact us today to discuss your specific needs.</li>
+                </ul>
+                <p>Together, we can make a difference in your health and well-being. You are not alone.</p>
+
 		<div className='end' style={{ marginTop: '5%' }}>
-		  <a href='/donate'> Get Involved
+		  <a href='/donate'>Explore Resources
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>

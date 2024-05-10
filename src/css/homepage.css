@@ -1,0 +1,407 @@
+/* HOME PAGE */
+.home-page, .our-mission, .testimonials, .call-to-action, .ways-help{
+  height: 100vh;
+}
+
+.home-page .logo{
+  margin-left: 3%;
+}
+
+.home-page .right-bottom, .donate-home .right-bottom{
+  transform: 400ms ease;
+  animation: slide-left 1.5s ease-in-out; 
+}
+
+.home-page .left-top, .donate-home .left-top{
+  animation: slide-right 1.5s ease-in-out; 
+  transform: 400ms ease;
+}
+
+.our-mission .right-bottom, .ways-help .right-bottom, 
+.donate-info .right-bottom, .impact-volunteer .right-bottom  {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;  
+}
+
+.home-page .right-bottom :is(p, h1),
+.our-mission .left-top :is(p, h2),
+.ways-help .left-top :is(p, h2),
+.team .left-top :is(p, h2),
+.donate-info .left-top :is(p, h2), 
+.impact-volunteer .left-top :is(p, h2){
+  margin-left: 5%;
+  width: 60%;
+}
+
+.our-mission .right-bottom :is(p, h2, h3){
+  margin-left: 10%;
+  width: 60%;
+}
+
+.our-mission .left-top{
+  justify-content: start;
+  padding-top: 30%;
+}
+
+.our-mission .left-top button{
+  margin-top: 40px;
+}
+
+
+.our-mission div, .ways-help div, .testimonials, .donate-info div, .impact-volunteer div {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-mission .right-bottom  {
+  flex-direction: row;
+}
+
+.our-mission .left-top, .our-mission .right-bottom, 
+.ways-help .left-top, .team .left-top, .donate-info .left-top, .impact-volunteer .left-top{
+  height: 100%;
+}
+
+.our-mission .right-bottom, .ways-help .left-top {
+  background-color: rgb(0, 120, 145);
+}
+
+.our-mission .right-bottom :is(h2, h3, p),
+.ways-help .left-top :is(h2, h3, p) {
+  color: white;
+}
+
+.next-to-each-other{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.ways-help .right-bottom div, .donate-info .right-bottom div, .impact-volunteer .right-bottom div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  color: white; /* Ensures text is white for better visibility */
+}
+
+.ways-help .right-bottom div::before,
+.donate-info .right-bottom div::before, 
+.impact-volunteer .right-bottom div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5); 
+  z-index: -1;
+  transition: 400ms ease;
+}
+
+.ways-help .right-bottom div:hover::before,
+.donate-info .right-bottom div:hover::before, 
+.impact-volunteer .right-bottom div:hover::before {
+  background: rgba(0, 0, 0, 0);
+}
+
+.ways-help .right-bottom h3,
+.donate-info .right-bottom h3,
+.impact-volunteer .right-bottom h3{
+  transition: opacity 400ms ease;
+  opacity: 1;  
+  color: white;
+}
+
+.ways-help .right-bottom div:hover h3,
+.donate-info .right-bottom div:hover h3,
+.impact-volunteer .right-bottom div:hover h3 {
+  opacity: 0;
+}
+
+.testimonals .slide-track{
+  width: calc(250px * 8);
+  animation: scroll8 40s linear infinite;
+}
+
+.testimonials p{
+  width: 100%;
+} 
+
+.testimonials h4{
+  margin: 0;
+  margin-top: 5%;
+  padding: 0;
+  font-family: "rama-gothic-m";
+  letter-spacing: 1px;
+  font-size: 1.25em;
+}
+
+.testimonials .slide img{
+  height: 30vh;
+  object-fit:cover;
+}
+
+.testimonials .slide  #alessandra, .testimonials .slide  #helaine{
+  object-position: top; /* Aligns the top of the image with the top of the container */
+
+}
+
+.testimonials .slide {
+  margin-left: 0.5%;
+  height: 50vh;
+  padding-top: 20px;
+  border-radius: 7px;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: visible;
+}
+
+.testimonials .photo-slider{
+  height: auto;
+}
+
+
+.left-top .end{
+  display: flex;
+  align-items: start;
+  width: 55%;
+}
+
+.call-to-action{
+  flex-direction: column;
+  width: 100%;
+}
+
+.get-involved{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+}
+
+.get-involved .right-bottom{
+ width:10%;
+}
+
+.get-involved p{
+  width: 300px
+}
+
+.call-to-action .next-to-each-other{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+  gap: 3%;
+}
+
+.call-to-action .next-to-each-other a{
+  width: 5em;
+}
+
+.our-mission .accomplishments {
+  width: 100%;
+  color: white;
+}
+
+#second-p, #second{
+  display: none;
+}
+
+
+#icon-talk{ 
+  width: 15em; 
+  height: 14em; 
+}
+
+@media (max-width: 1024px) {
+  .our-mission, .testimonials, .get-involved, .ways-help{
+    height: auto;
+  }
+
+  p{
+    font-size: 0.8em;
+  }
+
+  .home-page, .team, .donate-home, .volunteer-home, .projects-home{
+    margin-left: 0;
+    margin-top: 70px;
+  }
+
+  .home-page .logo{
+    margin-left: 0;
+  }
+  
+  .home-page .right-bottom{
+    padding-left: 0;
+  }
+  
+  .home-page .right-bottom :is(p, h1){
+    margin-left: 9%;
+    width: 70%;
+  }
+   
+  .home-page {
+    flex-direction: row;
+
+  }
+
+  .home-page .left-top {
+    width: 50%;
+  }
+  
+  .home-page .right-bottom {
+    width: 50%;
+  }
+  
+  .our-mission .left-top :is(p, h2),
+  .ways-help .left-top :is(p, h2),
+  .team .left-top :is(p, h2),
+  .donate-info .left-top :is(p, h2),
+  .impact-volunteer .left-top :is(p, h2) {
+    width: 80%;
+  }
+
+  .our-mission .left-top, .our-mission .right-bottom, .ways-help .left-top, 
+  .team .left-top, .donate-info .left-top, .impact-volunteer .left-top {
+    height: auto;
+   }
+
+  .ways-help .right-bottom div, .donate-info .right-bottom div, .impact-volunteer .right-bottom div{
+    height: 100%;
+  }
+
+  .our-mission .left-top{
+    padding-top: 0;
+  }
+
+  .our-mission .right-bottom{
+    flex-direction: column;
+  }
+  
+  .our-mission a, .ways-help a{
+    width: 6em;
+    font-size: 0.65em;
+  }
+
+  .our-mission h2 {
+    margin-bottom: 0;
+  }
+
+  .our-mission .end, .ways-help .end{
+    width: 76%;
+    margin-bottom: 5em;
+  }
+
+  .our-mission .description :is(h3, h2, p){
+    width: 70%;
+    margin-left: 0;
+  }
+
+  .our-mission .description ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    width: 70%;
+  }
+
+  .testimonials .slide {
+    height: 40%;
+  }
+
+  .slide-track:hover, .slide-track .slide:focus , 
+  .volunteer-home .slide-track:hover, .volunteer-home .slide-track .slide:focus{
+    animation-play-state:running;
+  }
+
+   #second{
+    display: flex;
+  }
+
+  #first, .ways-help .right-bottom{
+    display: none;
+  }
+
+  .ways-help .left-top, .testimonials, .call-to-action {
+    padding-top: 7%;
+    padding-bottom: 7%;
+  }
+
+  .extra .image-slider{
+    height: 40vh;
+    object-fit: contain;
+  }
+
+  .extra .image-slider img{
+     width: 100%;
+  }
+
+  .logo{
+    height: 5em;
+  }
+  
+  h1{ 
+    font-size: 2.5em;
+  }    
+ 
+  .call-to-action .next-to-each-other a {
+    width: 5em;
+    font-size: 0.75em;
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 768px) {
+  .call-to-action .next-to-each-other a {
+    margin-top: 0;
+  }
+
+  .logo{
+    height: 4.5em;
+  }
+
+  h1, h2{ 
+    font-size: 2em;
+  }
+
+  .home-page .left-top {
+    display: none;
+  }
+
+  .home-page .right-bottom {
+    width: 100%;
+  }
+  
+  .get-involved{
+    flex-direction: column;
+  }
+
+  #first-p{
+    display: none;
+  }
+
+  #second-p{
+    display: block;
+  }
+  
+  .call-to-action .next-to-each-other{
+    margin-top: 10%;
+  }
+
+  #icon-talk{ 
+    width: 10em; 
+    height: 10em; 
+  }
+}
+
+/* HOME PAGE ENDS */

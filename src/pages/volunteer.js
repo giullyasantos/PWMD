@@ -5,6 +5,31 @@ import Test from '../images/test.webp';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
+import volunteer1 from '../images/volunteer/volunteer1.jpg';
+import volunteer2 from '../images/volunteer/volunteer2.jpg';
+import volunteer3 from '../images/volunteer/volunteer3.jpg';
+import volunteer4 from '../images/volunteer/volunteer4.jpg';
+import volunteer5 from '../images/volunteer/volunteer5.jpg';
+import volunteer6 from '../images/volunteer/volunteer6.jpg';
+import volunteer7 from '../images/volunteer/volunteer7.jpg';
+import volunteer8 from '../images/volunteer/volunteer8.jpg';
+import volunteer9 from '../images/volunteer/volunteer9.jpg';
+import volunteer10 from '../images/volunteer/volunteer10.jpg';
+import volunteer11 from '../images/volunteer/volunteer11.jpg';
+import volunteer12 from '../images/volunteer/volunteer12.jpg';
+import volunteer13 from '../images/volunteer/volunteer13.jpg';
+import volunteer14 from '../images/volunteer/volunteer14.jpg';
+import volunteer15 from '../images/volunteer/volunteer15.jpg';
+import volunteer16 from '../images/volunteer/volunteer16.jpg';
+import volunteer17 from '../images/volunteer/volunteer17.jpg';
+import volunteer18 from '../images/volunteer/volunteer18.jpg';
+import volunteer19 from '../images/volunteer/volunteer19.jpg';
+import volunteer20 from '../images/volunteer/volunteer20.jpg';
+import volunteer21 from '../images/volunteer/volunteer21.jpg';
+
+
+
+
 function Volunteer() {
   return (
     <div className='volunteer'>
@@ -12,134 +37,148 @@ function Volunteer() {
         <section className='volunteer-home'>
             <div className='photo-slider'>
                 <div className='slide-track first'>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>             
+       		  <div className='slide'>
+                    <img src={volunteer1} alt='volunteer at nonprofit'/> 
                 </div>
+                <div className='slide'>
+                    <img src={volunteer2} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer3} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer4} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer5} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer6} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer7} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer21} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer9} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer1} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer2} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer3} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer4} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer5} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer6} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer7} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer21} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer9} alt='volunteer at nonprofit'/> 
+                </div>
+                 </div>
             </div>
-            <h2> Volunteer </h2>
-            <p>To participate in this effort, the ACT Responsible association identifies, brings together and disseminates the best major cause communication campaigns created each year around the world. Advertising simply expresses complex issues . Associations need this strength to make themselves known, raise awareness, generate donations, demonstrate their actions…
+            <h2> Volunteer</h2>
+            <p>At People Who Make a Difference, we believe that everyone has the potential to impact lives and create a healthier community. Our volunteers are at the heart of our mission, helping us provide essential support to the uninsured and making healthcare accessible to all. Whether you have a few hours a month or a few days a week, your time and skills can make a real difference.
             </p>
-            <button>Apply</button>
+            <a href='/volunteer'> Become a Volunteer
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="800px" width="800px" version="1.2" baseProfile="tiny" id="Layer_1" viewBox="0 0 256 256" >
+<path d="M216.2,92.5c-5.2-5.3-13.8-5.4-19-0.1L157.8,134l-0.3,0.3c-25.5,0.1-46.2,16.8-46.2,37.3h-5.8c0-23.6,23.1-42.8,51.6-43.1  l-0.1-19.4c0,0-0.1-85.4-0.1-85.5c-0.7-5.8-5.6-10.3-11.7-10.3c-6.5,0-11.7,5.3-11.7,11.7c0,0.2,0,72.9,0,72.9l-5.2,0.2l-0.1-81.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8v81h-5.6l0.1-63.6c0-6.5-5.3-11.7-11.8-11.7S75.7,28,75.7,34.4V98h-5.2l0.1-34.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8c0,108.4,0,108.4,0,111c0,13.2,6.8,24.4,16.2,28.1v48.4h0.2v0.4l81.2-0.4v-51.1  c2.5-0.9,5.1-2,7.6-3.3c15.4-7.9,26.1-20.3,29.5-32.5c2.9-4.3,36.8-56.2,36.8-56.2C221.4,103.7,220.6,96.9,216.2,92.5z"/>
+</svg>
+                        </div>
+                    </a>
+
             <div className='photo-slider second'>
                 <div className='slide-track'>
                     <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>
-                    <div className='slide'>
-                        <img src={Test} alt="hey"/>
-                    </div>             
+                    <img src={volunteer10} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer11} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer12} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer13} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer14} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer15} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer16} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer17} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer19} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer10} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer11} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer12} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer13} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer14} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer15} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer16} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer17} alt='volunteer at nonprofit'/> 
+                </div>
+                <div className='slide'>
+                    <img src={volunteer19} alt='volunteer at nonprofit'/> 
+                </div>
                 </div>
             </div>
+            
         </section>
         <section className='impact-volunteer'>
             <div className='left-top'>
-                <h2>Making a Difference</h2>
-                <p>The fight against poverty, exclusion, global warming, the protection of biodiversity, the prevention of diseases, the defense of men's and women's rights, etc. are issues that concern us all. And yet, it is difficult to get citizens to adhere to these themes. However, it is by popularizing these issues and making them accessible to as many people as possible that mentalities will evolve, allowing the construction of a fairer, more united, more equitable and more sustainable world .</p>
-                <p>To participate in this effort, the ACT Responsible association identifies, brings together and disseminates the best major cause communication campaigns created each year around the world. Advertising simply expresses complex issues . Associations need this strength to make themselves known, raise awareness, generate donations, demonstrate their actions…</p>
+
+
             </div>
             <div className='right-bottom'>
-               
-
+              <h2>You Can Make A Difference!</h2>
+              <p> Volunteering isn't just about lending a helping hand; it's about spreading love, kindness, and hope. It's about making someone's day a little brighter, their burden a little lighter.</p>
+              <ul>
+                <li><strong>Impact:</strong> Directly improve lives through your actions.</li>
+                <li><strong>Connect:</strong> Be part of a community that cares.</li>
+                <li><strong>Grow:</strong> Enhance your skills and build your resume.</li>
+              </ul>
+              <p>Excited to join? We'd love to hear from you! Send your resume to the email below. Let’s make a difference together!</p> 
+              <a className='underline-animation' href="mailto:admassist@peoplewhomakeadifference.org">admassist@peoplewhomakeadifference.org</a>
             </div>
         </section>
         <footer><Footer/></footer>
