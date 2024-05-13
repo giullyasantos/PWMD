@@ -90,7 +90,7 @@ function Home() {
                 <p>Together, we can make a difference in your health and well-being. You are not alone.</p>
 
 		<div className='end' style={{ marginTop: '5%' }}>
-		  <a href='/donate'>Explore Resources
+		  <a href='/projects'>Explore Resources
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
