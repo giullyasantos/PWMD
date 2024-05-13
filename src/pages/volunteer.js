@@ -93,7 +93,7 @@ function Volunteer() {
                 </div>
                  </div>
             </div>
-            <h2> Volunteer</h2>
+            <h1> Volunteer</h1>
             <p>At People Who Make a Difference, we believe that everyone has the potential to impact lives and create a healthier community. Our volunteers are at the heart of our mission, helping us provide essential support to the uninsured and making healthcare accessible to all. Whether you have a few hours a month or a few days a week, your time and skills can make a real difference.
             </p>
             <a href='/volunteer'> Become a Volunteer
@@ -165,21 +165,49 @@ function Volunteer() {
             
         </section>
         <section className='impact-volunteer'>
-            <div className='left-top'>
-
-
-            </div>
-            <div className='right-bottom'>
               <h2>You Can Make A Difference!</h2>
-              <p> Volunteering isn't just about lending a helping hand; it's about spreading love, kindness, and hope. It's about making someone's day a little brighter, their burden a little lighter.</p>
+              <p> Volunteering is not merely about offering a helping hand; it's a heartfelt act of spreading love, kindness, and hope. It's about lighting up someone's day, easing their burdens, and contributing positively to their lives. As a volunteer, you'll engage in a variety of activities including participating in fundraisers, assisting at events, and numerous other volunteering opportunities. Each action you take helps to weave a tapestry of community support and shared joy.</p>
               <ul>
-                <li><strong>Impact:</strong> Directly improve lives through your actions.</li>
-                <li><strong>Connect:</strong> Be part of a community that cares.</li>
-                <li><strong>Grow:</strong> Enhance your skills and build your resume.</li>
+                <li>
+                  <dotlottie-player className='svg'
+                    src="https://lottie.host/d2fe904a-a01c-483e-a5bb-0302d7233380/AY39VXHX56.json"
+                    background="transparent"
+                    speed={1}
+                    direction={1}
+                    style={{ width: '20em', height: '20em' }}
+                    loop
+                    autoplay
+                  />
+                  <h3>Impact:</h3><h4>Directly improve lives<br/>through your actions.</h4>
+                </li>
+                <li>
+                  <dotlottie-player 
+                    src="https://lottie.host/7e602bb8-eae7-49ef-a623-a8b8f8cd662c/Pna8a60qUT.json"
+                    background="transparent"
+                    speed={1}
+                    direction={1}
+                    style={{ width: '20em', height: '20em' }}
+                    loop
+                    autoplay
+                  />
+                  <h3>Connect:</h3><h4>Be part of a community<br/>that cares.</h4>
+                </li>
+                <li>
+                  <dotlottie-player 
+                    src="https://lottie.host/25f34143-5b67-4ec9-b07b-06efd4c7377a/uV4HhzP6jY.json"
+                    background="transparent"
+                    speed={1}
+                    style={{ width: '20em', height: '20em' }}
+                    loop
+                    autoplay
+                  />
+                  <h3>Grow:</h3><h4>Enhance your skills<br/>and build your resume.</h4>
+                </li>
               </ul>
-              <p>Excited to join? We'd love to hear from you! Send your resume to the email below. Let’s make a difference together!</p> 
+              <h5>Excited to join? We'd love to hear from you! Email us your resume. Let’s make a difference together!</h5> 
               <a className='underline-animation' href="mailto:admassist@peoplewhomakeadifference.org">admassist@peoplewhomakeadifference.org</a>
-            </div>
+                
+         
         </section>
         <footer><Footer/></footer>
     </div>

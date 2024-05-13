@@ -55,9 +55,8 @@ const Footer = () => {
                     </div>
                     <div id='get-help'>
                         <h4>Get Help</h4>
-                        <a className='underline-animation'>Pink Prevention Program</a>
-                        <a className='underline-animation'>Find Doctor</a>
-                        <a className='underline-animation'>Application for Assistance</a>
+                        <a className='underline-animation' href='https://docs.google.com/forms/d/e/1FAIpQLSf-yz7E3rh0U-9YMRPnNe2BVYGsniFucwvj-bJhQrJ5eWqAMQ/viewform'>Pink Prevention Program</a>
+                        <a className='underline-animation' href='https://form.jotform.com/220835736434155'>Application for Assistance</a>
                     </div>
                 </div>
             </div>
