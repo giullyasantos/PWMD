@@ -96,7 +96,7 @@ function Volunteer() {
             <h1> Volunteer</h1>
             <p>At People Who Make a Difference, we believe that everyone has the potential to impact lives and create a healthier community. Our volunteers are at the heart of our mission, helping us provide essential support to the uninsured and making healthcare accessible to all. Whether you have a few hours a month or a few days a week, your time and skills can make a real difference.
             </p>
-            <a href='/volunteer'> Become a Volunteer
+            <a href='mailto:admassist@peoplewhomakeadifference.org'> Become a Volunteer
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="800px" width="800px" version="1.2" baseProfile="tiny" id="Layer_1" viewBox="0 0 256 256" >
 <path d="M216.2,92.5c-5.2-5.3-13.8-5.4-19-0.1L157.8,134l-0.3,0.3c-25.5,0.1-46.2,16.8-46.2,37.3h-5.8c0-23.6,23.1-42.8,51.6-43.1  l-0.1-19.4c0,0-0.1-85.4-0.1-85.5c-0.7-5.8-5.6-10.3-11.7-10.3c-6.5,0-11.7,5.3-11.7,11.7c0,0.2,0,72.9,0,72.9l-5.2,0.2l-0.1-81.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8v81h-5.6l0.1-63.6c0-6.5-5.3-11.7-11.8-11.7S75.7,28,75.7,34.4V98h-5.2l0.1-34.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8c0,108.4,0,108.4,0,111c0,13.2,6.8,24.4,16.2,28.1v48.4h0.2v0.4l81.2-0.4v-51.1  c2.5-0.9,5.1-2,7.6-3.3c15.4-7.9,26.1-20.3,29.5-32.5c2.9-4.3,36.8-56.2,36.8-56.2C221.4,103.7,220.6,96.9,216.2,92.5z"/>

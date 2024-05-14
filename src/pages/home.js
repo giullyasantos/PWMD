@@ -61,13 +61,10 @@ function Home() {
                         <li>Lower Cancer Mortality Rates</li>
                         <li>Decreased Medical Expenses</li>
                     </ul>
-
                     </div>
                 </div>
                 <div className='image-slider' id='first'>
-                   
-                        <img src={Event2011} alt="TESTIMONIALS HERE"/>
-
+                     <img src={Event2011} alt="TESTIMONIALS HERE"/>
                 </div>
             </div>
         </section>
@@ -79,18 +76,16 @@ function Home() {
         <section className='ways-help'>
             <div className='left-top'>
                 <h2>Need Help? We're Here for You.</h2>
-                <p>Facing healthcare challenges without insurance can be overwhelming. At People Who Make A Difference, we understand the struggle and are dedicated to providing support. If you are uninsured and need assistance with healthcare costs, we encourage you to reach out.
-    		</p>
+                <p>Facing healthcare challenges without insurance can be overwhelming. At People Who Make A Difference, we understand the struggle and are dedicated to providing support. If you are uninsured and need assistance with healthcare costs, we encourage you to reach out.</p>
                 <p style={{fontWeight: 'bold'}}>Take the first step towards accessible healthcare:</p>
-		<ul>
+		        <ul>
                   <li>Learn more about our eligibility requirements and application process.</li>
                   <li>Explore our available resources and upcoming events.</li>
                   <li>Contact us today to discuss your specific needs.</li>
                 </ul>
                 <p>Together, we can make a difference in your health and well-being. You are not alone.</p>
-
-		<div className='end' style={{ marginTop: '5%' }}>
-		  <a href='/projects'>Explore Resources
+		        <div className='end' style={{ marginTop: '5%' }}>
+                    <a href='/projects'>Explore Resources
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -110,7 +105,6 @@ function Home() {
                 <div style={{ backgroundImage: `url(${healtheducation})`, backgroundSize: 'cover', backgroundPosition: 'right center' }}>
                     <h3>Health Education</h3>
                 </div>
-
             </div>
         </section>
         <section className='testimonials'>
@@ -201,37 +195,28 @@ function Home() {
             </div>
         </section>
         <section className='call-to-action'>
-<div className='get-involved'>
-            <lord-icon id='icon-talk'
-                src="https://cdn.lordicon.com/wzrwaorf.json"
-                trigger="in"
-                delay="1500"
-                state="in-reveal"
-                colors="primary:#fd3628,secondary:#027593"
-            ></lord-icon>
-	  <div>
-	    <h2>Get Involved</h2>
-            <p id='first-p'>Your support is crucial. Whether you choose to donate or volunteer, you help us drive vital changes and provide essential services. Let's empower our community together.</p>
-          </div>
-          <p id='second-p'>Your support is crucial. Whether you choose to donate or volunteer, you help us drive vital changes and provide essential services. Let's empower our community together.</p>
-</div>
-<div className='next-to-each-other'>
-<a href='/donate'> Donate
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24"><path d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001.01 0 .002-.001.002-.001h.001l.002-.001.003-.001.002-.001.002-.001.003-.001.002-.001c.003 0 .001-.001.002-.001l.003-.002.002-.001.002-.001.003-.001.002-.001h.001l.002-.001h.001l.002-.001.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485.081.065.163.139.247.222l.707.707.707-.707c.084-.083.166-.157.247-.222.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z"/></svg>
-                        </div>
-                    </a>
-
-<a href='/volunteer'> Volunteer
-                        <div class="icon">
-                            <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="800px" width="800px" version="1.2" baseProfile="tiny" id="Layer_1" viewBox="0 0 256 256" >
-<path d="M216.2,92.5c-5.2-5.3-13.8-5.4-19-0.1L157.8,134l-0.3,0.3c-25.5,0.1-46.2,16.8-46.2,37.3h-5.8c0-23.6,23.1-42.8,51.6-43.1  l-0.1-19.4c0,0-0.1-85.4-0.1-85.5c-0.7-5.8-5.6-10.3-11.7-10.3c-6.5,0-11.7,5.3-11.7,11.7c0,0.2,0,72.9,0,72.9l-5.2,0.2l-0.1-81.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8v81h-5.6l0.1-63.6c0-6.5-5.3-11.7-11.8-11.7S75.7,28,75.7,34.4V98h-5.2l0.1-34.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8c0,108.4,0,108.4,0,111c0,13.2,6.8,24.4,16.2,28.1v48.4h0.2v0.4l81.2-0.4v-51.1  c2.5-0.9,5.1-2,7.6-3.3c15.4-7.9,26.1-20.3,29.5-32.5c2.9-4.3,36.8-56.2,36.8-56.2C221.4,103.7,220.6,96.9,216.2,92.5z"/>
-</svg>
-                        </div>
-                    </a>
-
-</div>
-
+            <div className='get-involved'>
+                <lord-icon id='icon-talk' src="https://cdn.lordicon.com/wzrwaorf.json" trigger="in" delay="900" state="in-reveal" colors="primary:#fd3628,secondary:#027593"></lord-icon>
+                <div>
+                    <h2>Get Involved</h2>
+                    <p id='first-p'>Your support is crucial. Whether you choose to donate or volunteer, you help us drive vital changes and provide essential services. Let's empower our community together.</p>
+                </div>
+                <p id='second-p'>Your support is crucial. Whether you choose to donate or volunteer, you help us drive vital changes and provide essential services. Let's empower our community together.</p>
+            </div>
+            <div className='next-to-each-other'>
+                <a href='/donate'> Donate
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="800px" height="800px" viewBox="0 0 24 24"><path d="M4 21h9.62a3.995 3.995 0 0 0 3.037-1.397l5.102-5.952a1 1 0 0 0-.442-1.6l-1.968-.656a3.043 3.043 0 0 0-2.823.503l-3.185 2.547-.617-1.235A3.98 3.98 0 0 0 9.146 11H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2zm0-8h5.146c.763 0 1.448.423 1.789 1.105l.447.895H7v2h6.014a.996.996 0 0 0 .442-.11l.003-.001.004-.002h.003l.002-.001h.004l.001-.001c.009.003.003-.001.003-.001.01 0 .002-.001.002-.001h.001l.002-.001.003-.001.002-.001.002-.001.003-.001.002-.001c.003 0 .001-.001.002-.001l.003-.002.002-.001.002-.001.003-.001.002-.001h.001l.002-.001h.001l.002-.001.002-.001c.009-.001.003-.001.003-.001l.002-.001a.915.915 0 0 0 .11-.078l4.146-3.317c.262-.208.623-.273.94-.167l.557.186-4.133 4.823a2.029 2.029 0 0 1-1.52.688H4v-6zM16 2h-.017c-.163.002-1.006.039-1.983.705-.951-.648-1.774-.7-1.968-.704L12.002 2h-.004c-.801 0-1.555.313-2.119.878C9.313 3.445 9 4.198 9 5s.313 1.555.861 2.104l3.414 3.586a1.006 1.006 0 0 0 1.45-.001l3.396-3.568C18.688 6.555 19 5.802 19 5s-.313-1.555-.878-2.121A2.978 2.978 0 0 0 16.002 2H16zm1 3c0 .267-.104.518-.311.725L14 8.55l-2.707-2.843C11.104 5.518 11 5.267 11 5s.104-.518.294-.708A.977.977 0 0 1 11.979 4c.025.001.502.032 1.067.485.081.065.163.139.247.222l.707.707.707-.707c.084-.083.166-.157.247-.222.529-.425.976-.478 1.052-.484a.987.987 0 0 1 .701.292c.189.189.293.44.293.707z"/></svg>
+                    </div>
+                </a>
+                <a href='/volunteer'> Volunteer
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="800px" width="800px" version="1.2" baseProfile="tiny" id="Layer_1" viewBox="0 0 256 256" >
+                            <path d="M216.2,92.5c-5.2-5.3-13.8-5.4-19-0.1L157.8,134l-0.3,0.3c-25.5,0.1-46.2,16.8-46.2,37.3h-5.8c0-23.6,23.1-42.8,51.6-43.1  l-0.1-19.4c0,0-0.1-85.4-0.1-85.5c-0.7-5.8-5.6-10.3-11.7-10.3c-6.5,0-11.7,5.3-11.7,11.7c0,0.2,0,72.9,0,72.9l-5.2,0.2l-0.1-81.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8v81h-5.6l0.1-63.6c0-6.5-5.3-11.7-11.8-11.7S75.7,28,75.7,34.4V98h-5.2l0.1-34.2  c0-6.5-5.3-11.7-11.8-11.7s-11.7,5.3-11.7,11.8c0,108.4,0,108.4,0,111c0,13.2,6.8,24.4,16.2,28.1v48.4h0.2v0.4l81.2-0.4v-51.1  c2.5-0.9,5.1-2,7.6-3.3c15.4-7.9,26.1-20.3,29.5-32.5c2.9-4.3,36.8-56.2,36.8-56.2C221.4,103.7,220.6,96.9,216.2,92.5z"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
         </section>
         <footer><Footer/></footer>
     </div>
