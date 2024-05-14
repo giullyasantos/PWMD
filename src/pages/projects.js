@@ -2,6 +2,9 @@ import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
 import crunches from '../images/crunches.jpg';
+import foodpresident from '../images/help/foodpresident.jpg';
+import fooddonation from '../images/help/fooddonation.jpg';
+
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
@@ -50,94 +53,29 @@ function GetHelp() {
               </a>
             </div>
         </section>
-        <section className='testimonials'>
-            <h2>Some of the People We Helped:</h2>
-            <div className='photo-slider'>
-                <div className='slide-track'>
-                    <div className='slide'>
-                        <img id='alessandra' src={alessandra} alt="Alessandra's Review People Who Make A Difference"/>
-                        <h4>Alessandra</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={claudia} alt="Claudia's Review People Who Make A Difference"/>
-                        <h4>Claudia</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img id='helaine'src={helaine} alt="Helaine's Review People Who Make A Difference"/>
-                        <h4>Helaine</h4>
-                        <p> After becoming handicapped from a motorcycle accident in my early twenties, I needed a new wheelchair in 2019. My cousin in Orlando, FL, told the PWMD Foundation.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={nilton} alt="Nilton's Review People Who Make A Difference"/>
-                        <h4>Nilton</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={nubia} alt="Nubia's Review People Who Make A Difference"/>
-                        <h4>Nubia</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={paula} alt="Paula's Review People Who Make A Difference"/>
-                        <h4>Paula</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={soledad} alt="Soledad's Review People Who Make A Difference"/>
-                        <h4>Soledad</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img id='alessandra' src={alessandra} alt="Alessandra's Review People Who Make A Difference"/>
-                        <h4>Alessandra</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={claudia} alt="Claudia's Review People Who Make A Difference"/>
-                        <h4>Claudia</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img id='helaine'src={helaine} alt="Helaine's Review People Who Make A Difference"/>
-                        <h4>Helaine</h4>
-                        <p> After becoming handicapped from a motorcycle accident in my early twenties, I needed a new wheelchair in 2019. My cousin in Orlando, FL, told the PWMD Foundation.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={nilton} alt="Nilton's Review People Who Make A Difference"/>
-                        <h4>Nilton</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={nubia} alt="Nubia's Review People Who Make A Difference"/>
-                        <h4>Nubia</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={paula} alt="Paula's Review People Who Make A Difference"/>
-                        <h4>Paula</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={soledad} alt="Soledad's Review People Who Make A Difference"/>
-                        <h4>Soledad</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img id='alessandra' src={alessandra} alt="Alessandra's Review People Who Make A Difference"/>
-                        <h4>Alessandra</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                    <div className='slide'>
-                        <img src={claudia} alt="Claudia's Review People Who Make A Difference"/>
-                        <h4>Claudia</h4>
-                        <p>I was very blessed by the foundation, when I most needed a financial help for an urgent surgery.</p>
-                    </div>
-                </div>
+        <section className='food'>
+          <div className='left-top'>
+            <div className='div2'>
+              <img src={foodpresident} alt="hey"/>
             </div>
+            <div className='div1'>
+              <img src={fooddonation} alt="hey"/>
+            </div>
+          </div>
         </section>
-
+        <section className='food-info'>
+            <h2>FREE FOOD WEDNESDAY</h2>
+            <p>Join us every Wednesday from 3:00 PM to 4:00 PM for our community grocery distribution. This event is open to all residents in need of food assistance and operates on a first-come, first-served basis. Fresh produce, dairy, and pantry items are available.</p>
+            <a href='https://www.google.com/maps/dir//3467%20Parkway%20Center%20Orlando,%20FL%2032808'>Get Directions
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" version="1.1" id="Capa_1" width="800px" height="800px" viewBox="0 0 395.71 395.71">
+<g>
+	<path d="M197.849,0C122.131,0,60.531,61.609,60.531,137.329c0,72.887,124.591,243.177,129.896,250.388l4.951,6.738   c0.579,0.792,1.501,1.255,2.471,1.255c0.985,0,1.901-0.463,2.486-1.255l4.948-6.738c5.308-7.211,129.896-177.501,129.896-250.388   C335.179,61.609,273.569,0,197.849,0z M197.849,88.138c27.13,0,49.191,22.062,49.191,49.191c0,27.115-22.062,49.191-49.191,49.191   c-27.114,0-49.191-22.076-49.191-49.191C148.658,110.2,170.734,88.138,197.849,88.138z"/>
+</g>
+</svg>
+              </div>
+            </a>
+        </section>    
         <section className='wheelchair'>
           <div className='photo'>
             <img src={crunches} alt="hey"/>
