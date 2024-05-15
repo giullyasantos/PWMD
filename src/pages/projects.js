@@ -4,17 +4,9 @@ import PWMD from '../images/pwmd.webp';
 import crunches from '../images/crunches.jpg';
 import foodpresident from '../images/help/foodpresident.jpg';
 import fooddonation from '../images/help/fooddonation.jpg';
-
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import alessandra from '../images/home/testimonials/alessandra.webp';
-import claudia from '../images/home/testimonials/claudia.webp';
-import helaine from '../images/home/testimonials/helaine.webp';
-import nilton from '../images/home/testimonials/nilton.webp';
-import nubia from '../images/home/testimonials/nubia.webp';
-import paula from '../images/home/testimonials/paula.webp';
-import soledad from '../images/home/testimonials/soledad.webp';
 import financial from '../images/home/financial.webp';
 import fundraiser from '../images/home/fundraiser.webp';
 
