@@ -299,6 +299,7 @@ section a:active .icon {
   transition: 400ms ease;
 }
 
+
 .logo{
   height: 9em;
 }
@@ -446,7 +447,7 @@ p {
 }
 
 .ways-help ul{
-  width: 50%;
+  width: 55%;
   gap: 1em;
   display: flex;
   align-items: start;
@@ -503,51 +504,6 @@ p {
 .donate-info .right-bottom div:hover h3,
 .impact-volunteer .right-bottom div:hover h3 {
   opacity: 0;
-}
-
-.testimonals .slide-track{
-  width: calc(250px * 9);
-  animation: scroll8 40s linear infinite;
-}
-
-.testimonials p{
-  width: 90%;
-  color: white;
-} 
-
-.testimonials h4{
-  margin: 0;
-  margin-top: 5%;
-  padding: 2%;
-  font-size: 1.25em;
-  width: 90%;
-}
-
-.testimonials .slide img{
-  height: 20vh;
-  object-fit:cover;
-}
-
-.testimonials .slide  #alessandra, .testimonials .slide  #helaine{
-  object-position: top; /* Aligns the top of the image with the top of the container */
-}
-
-.testimonials .slide {
-  margin-left: 0.5%;
-  height: 50vh;
-  padding-top: 20px;
-  border-radius: 1rem;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  overflow: visible;
-  background-color: #027593;
-  border: 0.5px solid black;
-  color: white;
-}
-
-.testimonials .photo-slider{
-  height: auto; 
 }
 
 
@@ -695,19 +651,10 @@ p {
     width: 70%;
   }
 
-  .testimonials .slide {
-    height: 40%;
-  }
-
   .slide-track:hover, .slide-track .slide:focus , 
   .volunteer-home .slide-track:hover, .volunteer-home .slide-track .slide:focus{
     animation-play-state:running;
   }
-
-  .testimonials .slide-track:hover{
-    animation-play-state:paused;
-  }
-
 
    #second{
     display: flex;
@@ -1267,6 +1214,7 @@ p {
 
 /*PROJECTS PAGE ENDS*/
 /*DONATE PAGE*/
+
 @keyframes scroll25 {
   0%{
     transform: translateX(0);
@@ -1559,4 +1507,94 @@ p {
     transform: translateX(0);
   }
   
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+
+
+:root {
+  --slide-width: 104%; 
+}
+
+.slider-wrapper {
+  position: relative;
+  width: 55em;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: auto; 
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.slider-nav button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+
+.slider-nav svg{
+  transition: 400ms ease;
+}
+
+.slider-nav button:hover svg {
+  fill: #FD3628;
+}
+
+
+@media (max-width: 1024px){
+  .slider-wrapper {
+    width: 40em;
+  }
+
+  .slide {
+    width: 99%;
+  }
+}
+
+@media (max-width: 767px){
+  :root {
+    --slide-width: 90%; 
+  }
+
+  .slider-wrapper {
+    width: 22em;
+  }
+
+  .slide{
+    padding: 0;
+    width: 90%;
+  }
 }
