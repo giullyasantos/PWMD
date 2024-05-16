@@ -174,8 +174,7 @@ Together, we can create a future where healthcare is truly accessible for everyo
             </div>
             <div className='right-bottom'>
                 <h2>Health Available For All</h2>
-                <p>At "People Who Make A Difference," we believe that access to healthcare is not a privilege, but a right. Our mission is to dismantle the barriers that prevent the uninsured from receiving the medical attention they deserve. Through targeted outreach, education, and direct financial assistance, we are committed to making health services available to all, regardless of their financial situation. Join us in our endeavor to ensure that everyone, no matter where they come from or what their circumstances might be, has access to the healthcare they need to lead healthy, productive lives. Together, we can create a future where health is truly available for all.
-                </p>        
+                <p>We believe healthcare is a right. Our mission is to remove barriers preventing the uninsured from receiving medical care. Through outreach, education, and financial assistance, we make health services accessible to all, regardless of their circumstances.</p>        
             </div>
         </section>
       </div>

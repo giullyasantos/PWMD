@@ -947,6 +947,10 @@ p {
     width: 100%;
   }
 
+  .ceo .right-bottom{
+    height: auto;
+  }
+
 }
 
 /* ABOUT PAGE ENDS */
@@ -1523,6 +1527,8 @@ p {
   border-radius: 5px;
   padding: 10px;
   width: fit-content;
+  display: block !important; 
+  visibility: visible !important;
 }
 
 /* Customize the dropdown */
@@ -1534,6 +1540,8 @@ p {
   color: white;
   font-size: 1.25em;
   transition: 400ms ease;
+  display: block !important; 
+  visibility: visible !important;
 }
 
 .goog-te-gadget .goog-te-combo:hover {
