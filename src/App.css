@@ -1526,18 +1526,20 @@ p {
 
 
 
+:root {
+  --slide-width: 104%; 
+}
 
 .slider-wrapper {
   position: relative;
-  width: 100%;
+  width: 55em;
   overflow: hidden;
 }
 
 .slider {
-  margin-left: 70px;
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 50em; /* Ensure the slider takes the full width of the container */
+  width: 100%;
 }
 
 .slide {
@@ -1557,14 +1559,42 @@ p {
 }
 
 .slider-nav button {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #ccc;
+  background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 400ms ease;
 }
 
-.slider-nav button.active {
-  background-color: #333;
+.slider-nav svg{
+  transition: 400ms ease;
+}
+
+.slider-nav button:hover svg {
+  fill: #FD3628;
+}
+
+
+@media (max-width: 1024px){
+  .slider-wrapper {
+    width: 40em;
+  }
+
+  .slide {
+    width: 99%;
+  }
+}
+
+@media (max-width: 767px){
+  :root {
+    --slide-width: 90%; 
+  }
+
+  .slider-wrapper {
+    width: 22em;
+  }
+
+  .slide{
+    padding: 0;
+    width: 90%;
+  }
 }

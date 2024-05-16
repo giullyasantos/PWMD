@@ -43,7 +43,10 @@ function Home() {
     setCurrentSlide((prevIndex) => (prevIndex + 1) % images.length);
   };
 
-    return (
+  const rootStyles = getComputedStyle(document.documentElement);
+  const slideWidth = parseFloat(rootStyles.getPropertyValue('--slide-width'));
+  
+   return (
     <div className='home'>
         <SideNavbar/>
         <section className='home-page'>
@@ -134,7 +137,7 @@ function Home() {
         <section className='testimonials'>
             <h2 style={{color: '#027593'}}>Transforming Lives: Our Community's Stories</h2>
             <div className="slider-wrapper">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+      <div className="slider" style={{ transform: `translateX(-${currentSlide * slideWidth}%)` }}>
         {images.map((image, index) => (
           <img
             key={index}
@@ -145,8 +148,8 @@ function Home() {
         ))}
       </div>
       <div className="slider-nav">
-        <button className="prev" onClick={handlePrev}></button>
-        <button className="next" onClick={handleNext}></button>
+        <button className="prev" onClick={handlePrev}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-4.828 11.5l4.608 3.763-.679.737-6.101-5 6.112-5 .666.753-4.604 3.747h11.826v1h-11.828z"/></svg></button>
+        <button className="next" onClick={handleNext}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/></svg></button>
       </div>
     </div>
         </section>

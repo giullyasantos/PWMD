@@ -263,25 +263,6 @@ function Donate() {
                 <p>The fight against poverty, exclusion, global warming, the protection of biodiversity, the prevention of diseases, the defense of men's and women's rights, etc. are issues that concern us all. And yet, it is difficult to get citizens to adhere to these themes. However, it is by popularizing these issues and making them accessible to as many people as possible that mentalities will evolve, allowing the construction of a fairer, more united, more equitable and more sustainable world .</p>
                 <p>To participate in this effort, the ACT Responsible association identifies, brings together and disseminates the best major cause communication campaigns created each year around the world. Advertising simply expresses complex issues . Associations need this strength to make themselves known, raise awareness, generate donations, demonstrate their actions…</p>
             </div>
-<div className="swiper">
-
-  <div className="swiper-wrapper">
- 
-    <div className="swiper-slide">Slide 1</div>
-    <div className="swiper-slide">Slide 2</div>
-    <div className="swiper-slide">Slide 3</div>
-
-  </div>
-
-  <div className="swiper-pagination"></div>
-
-
-  <div className="swiper-button-prev"></div>
-  <div className="swiper-button-next"></div>
-
- 
-  <div className="swiper-scrollbar"></div>
-</div>
         </section>
         <section className='items-donation'>
             <div className='right-bottom'>
