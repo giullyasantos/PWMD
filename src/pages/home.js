@@ -1,8 +1,14 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
+import { Link, useLocation } from 'react-router-dom';
+
+import SideNavbar from '../components/navbar';
+import Footer from '../components/footer';
+
 import PWMD from '../images/pwmd.webp';
 import HomePhoto from '../images/home/homepage.webp';
 import Event2011 from '../images/home/2011 event.webp';
+
 import alessandra from '../images/home/testimonials/alessandra.jpg';
 import claudia from '../images/home/testimonials/claudia.jpg';
 import helaine from '../images/home/testimonials/helaine.jpg';
@@ -14,10 +20,13 @@ import financial from '../images/home/financial.webp';
 import fundraiser from '../images/home/fundraiser.webp';
 import healtheducation from '../images/home/healthevent.webp';
 
-import Test from '../images/test.webp';
-import SideNavbar from '../components/navbar';
-import Footer from '../components/footer';
-import { Link, useLocation } from 'react-router-dom';
+import alessandraMobile from '../images/home/testimonials/alessandramobile.png';
+import claudiaMobile from '../images/home/testimonials/claudiamobile.png';
+import helaineMobile from '../images/home/testimonials/helainemobile.png';
+import niltonMobile from '../images/home/testimonials/niltonmobile.png';
+import nubiaMobile from '../images/home/testimonials/nubiamobile.png';
+import paulaMobile from '../images/home/testimonials/paulamobile.png';
+import soledadMobile from '../images/home/testimonials/soledadmobile.png';
 
 
 const images = [
@@ -29,6 +38,17 @@ const images = [
   { src: paula, alt: "Paula's Review People Who Make A Difference" },
   { src: soledad, alt: "Soledad's Review People Who Make A Difference" },
 ];
+
+const mobileImages = [
+  { src: helaineMobile, alt: "Helaine's Review People Who Make A Difference" },
+  { src: alessandraMobile, alt: "Alessandra's Review People Who Make A Difference" },
+  { src: claudiaMobile, alt: "Claudia's Review People Who Make A Difference" },
+  { src: niltonMobile, alt: "Nilton's Review People Who Make A Difference" },
+  { src: nubiaMobile, alt: "Nubia's Review People Who Make A Difference" },
+  { src: paulaMobile, alt: "Paula's Review People Who Make A Difference" },
+  { src: soledadMobile, alt: "Soledad's Review People Who Make A Difference" },
+];
+
 
 
 function Home() {
@@ -45,6 +65,18 @@ function Home() {
 
   const rootStyles = getComputedStyle(document.documentElement);
   const slideWidth = parseFloat(rootStyles.getPropertyValue('--slide-width'));
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   
    return (
     <div className='home'>
@@ -137,21 +169,16 @@ function Home() {
         <section className='testimonials'>
             <h2 style={{color: '#027593'}}>Transforming Lives: Our Community's Stories</h2>
             <div className="slider-wrapper">
-      <div className="slider" style={{ transform: `translateX(-${currentSlide * slideWidth}%)` }}>
-        {images.map((image, index) => (
-          <img
-            key={index}
-            src={image.src}
-            alt={image.alt}
-            className="slide"
-          />
-        ))}
-      </div>
-      <div className="slider-nav">
-        <button className="prev" onClick={handlePrev}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-4.828 11.5l4.608 3.763-.679.737-6.101-5 6.112-5 .666.753-4.604 3.747h11.826v1h-11.828z"/></svg></button>
-        <button className="next" onClick={handleNext}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/></svg></button>
-      </div>
-    </div>
+              <div className="slider" style={{transform: `translateX(-${currentSlide * slideWidth}%)`,}}>
+                {(isMobile ? mobileImages : images).map((image, index) => (
+                  <img key={index} src={image.src} alt={image.alt} className="slide"/>
+                ))}
+              </div>
+              <div className="slider-nav">
+                <button className="prev" onClick={handlePrev}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12-12-5.377-12-12 5.377-12 12-12zm0 1c6.071 0 11 4.929 11 11s-4.929 11-11 11-11-4.929-11-11 4.929-11 11-11zm-4.828 11.5l4.608 3.763-.679.737-6.101-5 6.112-5 .666.753-4.604 3.747h11.826v1h-11.828z"/></svg></button>
+                <button className="next" onClick={handleNext}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/></svg></button>
+              </div>
+            </div>
         </section>
         <section className='call-to-action'>
             <div className='get-involved'>
