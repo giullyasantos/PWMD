@@ -59,7 +59,7 @@ function Volunteer() {
                     <img src={volunteer7} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
-                    <img src={volunteer21} alt='volunteer at nonprofit'/> 
+                    <img src={volunteer18} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
                     <img src={volunteer9} alt='volunteer at nonprofit'/> 
@@ -86,7 +86,7 @@ function Volunteer() {
                     <img src={volunteer7} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
-                    <img src={volunteer21} alt='volunteer at nonprofit'/> 
+                    <img src={volunteer18} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
                     <img src={volunteer9} alt='volunteer at nonprofit'/> 
@@ -94,8 +94,7 @@ function Volunteer() {
                  </div>
             </div>
             <h1> Volunteer</h1>
-            <p>At People Who Make a Difference, we believe that everyone has the potential to impact lives and create a healthier community. Our volunteers are at the heart of our mission, helping us provide essential support to the uninsured and making healthcare accessible to all. Whether you have a few hours a month or a few days a week, your time and skills can make a real difference.
-            </p>
+            <p>At People Who Make a Difference, we believe that everyone has the potential to impact lives and create a healthier community. Our volunteers are at the heart of our mission, helping us provide essential support to the uninsured and making healthcare accessible to all. Whether you have a few hours a month or a few days a week, your time and skills can make a real difference. Email us your resume and <strong>make a difference today!</strong></p>
             <a href='mailto:admassist@peoplewhomakeadifference.org'> Become a Volunteer
                         <div class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" height="800px" width="800px" version="1.2" baseProfile="tiny" id="Layer_1" viewBox="0 0 256 256" >

@@ -16,10 +16,10 @@ const SideNavbar = () => {
         <nav className='nav'>
           <ul>
             <li className={location.pathname === "/" ? "active" : ""}>
-              <Link to="/">HOME</Link>
+              <Link to="/">HOME PAGE</Link>
             </li>
             <li className={location.pathname.startsWith("/about") ? "active" : ""}>
-              <Link to="/about">ABOUT</Link>
+              <Link to="/about">ABOUT US</Link>
             </li>
             <li className={location.pathname.startsWith("/projects") ? "active" : ""}>
               <Link to="/projects">GET HELP</Link>
@@ -31,6 +31,7 @@ const SideNavbar = () => {
               <Link to="/volunteer">VOLUNTEER</Link>
             </li>
           </ul>
+          <div id='google_translate_element'></div>
 	  <div className='social-media'>
 	    <div>
             <a href="https://facebook.com/peoplewhomakeadifference/" target="_blank" rel="noopener noreferrer">

@@ -91,7 +91,7 @@ function Home() {
             </div>
             <div className='right-bottom'>
                 <img className='logo' src={PWMD} alt="hey"/>
-                <h1>RAISE AWARENESS, EDUCATE AND ASSIST THE UNINSURED POPULATION.</h1>
+                <h1>RAISE AWARENESS, EDUCATE, AND PROVIDE ASSISTANCE TO THOSE WITHOUT MEDICAL INSURANCE.</h1>
                 <p>A 501(c)(3) public charity nonprofit organization dedicated to providing financial assistance for affordable healthcare to the uninsured population.</p>
             </div>
         </section>
