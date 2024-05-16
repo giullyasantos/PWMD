@@ -257,13 +257,6 @@ function Donate() {
             </div>
             <a className='underline-animation' href= 'https://bdad99f6-ecd7-46cf-bf52-d53f84a6e18f.filesusr.com/ugd/5ba94e_0edfd157ef4d402a8a414685d799a826.pdf'><h4>Become A Member</h4></a>
         </section>
-        <section className='donate-info'>
-            <div className='left-top'>
-                <h2>Making a Difference</h2>
-                <p>The fight against poverty, exclusion, global warming, the protection of biodiversity, the prevention of diseases, the defense of men's and women's rights, etc. are issues that concern us all. And yet, it is difficult to get citizens to adhere to these themes. However, it is by popularizing these issues and making them accessible to as many people as possible that mentalities will evolve, allowing the construction of a fairer, more united, more equitable and more sustainable world .</p>
-                <p>To participate in this effort, the ACT Responsible association identifies, brings together and disseminates the best major cause communication campaigns created each year around the world. Advertising simply expresses complex issues . Associations need this strength to make themselves known, raise awareness, generate donations, demonstrate their actions…</p>
-            </div>
-        </section>
         <section className='items-donation'>
             <div className='right-bottom'>
                 <h2>Donation Opportunities</h2>

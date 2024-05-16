@@ -390,7 +390,7 @@ p {
 }
 
 .our-mission .right-bottom, .ways-help .right-bottom, 
-.donate-info .right-bottom, .impact-volunteer .right-bottom  {
+.impact-volunteer .right-bottom  {
   display: flex;
   flex-direction: row;
   justify-content: center;  
@@ -400,7 +400,6 @@ p {
 .our-mission .left-top :is(p, h2),
 .ways-help .left-top :is(p, h2),
 .team .left-top :is(p, h2),
-.donate-info .left-top :is(p, h2), 
 .impact-volunteer .left-top :is(p, h2){
   margin-left: 5%;
   width: 60%;
@@ -421,7 +420,7 @@ p {
 }
 
 
-.our-mission div, .ways-help div, .testimonials, .donate-info div, .impact-volunteer div {
+.our-mission div, .ways-help div, .testimonials, .impact-volunteer div {
   flex-direction: column;
   display: flex;
   justify-content: center;
@@ -433,7 +432,7 @@ p {
 }
 
 .our-mission .left-top, .our-mission .right-bottom, 
-.ways-help .left-top, .donate-info .left-top, .impact-volunteer .left-top{
+.ways-help .left-top, .impact-volunteer .left-top{
   height: 100%;
 }
 
@@ -461,7 +460,7 @@ p {
   width: 80%;
 }
 
-.ways-help .right-bottom div, .donate-info .right-bottom div, .impact-volunteer .right-bottom div{
+.ways-help .right-bottom div, .impact-volunteer .right-bottom div{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -473,8 +472,7 @@ p {
   color: white; /* Ensures text is white for better visibility */
 }
 
-.ways-help .right-bottom div::before,
-.donate-info .right-bottom div::before {
+.ways-help .right-bottom div::before{
   content: '';
   position: absolute;
   top: 0;
@@ -487,13 +485,11 @@ p {
 }
 
 .ways-help .right-bottom div:hover::before,
-.donate-info .right-bottom div:hover::before, 
 .impact-volunteer .right-bottom div:hover::before {
   background: rgba(0, 0, 0, 0);
 }
 
 .ways-help .right-bottom h3,
-.donate-info .right-bottom h3,
 .impact-volunteer .right-bottom h3{
   transition: opacity 400ms ease;
   opacity: 1;  
@@ -501,7 +497,6 @@ p {
 }
 
 .ways-help .right-bottom div:hover h3,
-.donate-info .right-bottom div:hover h3,
 .impact-volunteer .right-bottom div:hover h3 {
   opacity: 0;
 }
@@ -603,17 +598,16 @@ p {
   
   .our-mission .left-top :is(p, h2),
   .ways-help .left-top :is(p, h2),
-  .donate-info .left-top :is(p, h2),
   .impact-volunteer .left-top :is(p, h2) {
     width: 80%;
   }
 
   .our-mission .left-top, .our-mission .right-bottom, .ways-help .left-top, 
-  .team .left-top, .donate-info .left-top, .impact-volunteer .left-top {
+  .team .left-top, .impact-volunteer .left-top {
     height: auto;
    }
 
-  .ways-help .right-bottom div, .donate-info .right-bottom div, .impact-volunteer .right-bottom div{
+  .ways-help .right-bottom div, .impact-volunteer .right-bottom div{
     height: 100%;
   }
 
@@ -694,6 +688,14 @@ p {
 }
 
 @media (max-width: 768px) {
+  .testimonials {
+    height: 90vh;
+  }
+
+  .call-to-action {
+    height: auto;
+  }
+
   .call-to-action .next-to-each-other a {
     margin-top: 0;
   }
@@ -1260,7 +1262,7 @@ p {
   }
 }
 
-.sponsors a, .donate-info .right-bottom a{
+.sponsors a{
   background-color: transparent;
   padding: 0;
   box-shadow: none;
@@ -1275,46 +1277,6 @@ p {
   margin-top: 1em;
   transition: 400ms ease;
   border-radius: 7px;
-}
-
-.donate-info {
-  .right-bottom {
-    background-color: #e0645d;
-    height: 100vh;
-    .full-height{
-      height: 100%; width: 100%;
-      display: flex; 
-      align-items: center;  
-      justify-content: center;  
-    }
-
-    div::before{ 
-      background-color: #e0645d;
-    }
-
-    a:hover{
-      background-color: #dc8985;
-    }
-   
-    div{
-      border: 1px solid white;
-    }
-    
-    #zelle {
-      border-left: none;
-    }
-
-    p{
-      color: white;
-      margin: 0;
-    }
-  }
-
-  .left-top{
-    border-top: 20px solid #e0645d;
-    border-bottom: 20px solid #e0645d;
-    height: calc(100vh - 40px);
-  }
 }
 
 .donate-home{ 
@@ -1369,40 +1331,7 @@ p {
       align-items: center;
     }
   }
-  .donate-info {
-    .left-top{
-      border: none;
-      margin-bottom: 2em;
-      border-top: 10px solid #e0645d;
-    }
-    
-    .right-bottom {
-      height: auto;
-      width: 100%;
-      gap: 1em;
-      padding: 0;
-
-      div{
-        border-radius: 0px;
-        padding: 1em;
-        border-right: 3px solid white;
-
-        svg{
-          height: 8em;
-          width: 10em;
-        }
-
-      }
-
-      #paypal{
-        border: none;
-      }
-    }
-    .left-top{
-      height: auto;
-    }
-  }
-
+  
   .items-donation{
    margin-top: 0;
 
@@ -1417,25 +1346,7 @@ p {
 }
 
 @media (max-width: 768px) {
-  .donate-info {
-    .right-bottom {
-      div{
-        border-right: 1px solid white;
-        svg{
-          height: 4em;
-          width: 5em;
-        }
-      }
-
-      #paypal{
-        border: none;
-      }
-    }
-    .left-top{
-      height: auto;
-    }
-  }
-  
+    
   .donate-home p{
     width: 70%;
   }
@@ -1531,29 +1442,28 @@ p {
 }
 
 .slider-wrapper {
-  position: relative;
-  width: 55em;
-  overflow: hidden;
-}
-
-.slider {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
-}
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45em;
+  overflow: hidden;
 
-.slide {
-  width: 100%;
-  height: auto; 
-  object-fit: contain;
-  transition: opacity 0.5s ease-in-out;
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 95%;
+  }
+
+  .slide {
+    width: 100%;
+    height: auto; 
+    object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+  }
 }
 
 .slider-nav {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
   gap: 5px;
 }
@@ -1573,28 +1483,121 @@ p {
   fill: #FD3628;
 }
 
-
 @media (max-width: 1024px){
   .slider-wrapper {
     width: 40em;
-  }
-
-  .slide {
-    width: 99%;
+    
+    .slide {
+      width: 99%;
+    }
   }
 }
 
 @media (max-width: 767px){
   :root {
-    --slide-width: 90%; 
+    --slide-width: 104%; 
   }
 
   .slider-wrapper {
-    width: 22em;
+    width: 26em;
+    
+    .slide{
+      padding: 10px
+    }
   }
+}
 
-  .slide{
-    padding: 0;
-    width: 90%;
+@media (max-width: 410px){
+  .slider-wrapper {
+    width: 22em;
+
+    .slide {
+      width: 98%;
+    }
   }
+}
+
+
+#google_translate_element {
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  width: fit-content;
+}
+
+/* Customize the dropdown */
+.goog-te-gadget .goog-te-combo {
+  background-color: #027593;
+  border: 1px solid #027593;
+  border-radius: 7px;
+  padding: 5px;
+  color: white;
+  font-size: 1.25em;
+  transition: 400ms ease;
+}
+
+.goog-te-gadget .goog-te-combo:hover {
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+ /* Hide the Google branding */
+.goog-te-gadget {
+  color: transparent;
+}
+.goog-te-gadget span {
+  display: none;
+}
+
+#google_translate_element ::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+#google_translate_element ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+#google_translate_element ::-webkit-scrollbar-thumb {
+    background-color: #FD3628; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #f1f1f1; /* Border around the scrollbar thumb */
+}
+
+#google_translate_element ::-webkit-scrollbar-thumb:hover {
+    background: #FD3628; /* Color of the scrollbar thumb on hover */
+}
+
+/* For Firefox */
+#google_translate_element {
+    scrollbar-width: thin; /* Width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
+}
+
+/* Custom scrollbar for IE and Edge */
+@supports (-ms-overflow-style: none) {
+    #google_translate_element {
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    #google_translate_element::-ms-scrollbar {
+        width: 12px; /* Width of the scrollbar */
+    }
+
+    #google_translate_element::-ms-scrollbar-track {
+        background: #f1f1f1; /* Background of the scrollbar track */
+    }
+
+    #google_translate_element::-ms-scrollbar-thumb {
+        background-color: #FD3628; /* Color of the scrollbar thumb */
+        border-radius: 10px; /* Rounded corners */
+        border: 2px solid #f1f1f1; /* Border around the scrollbar thumb */
+    }
+
+    #google_translate_element::-ms-scrollbar-thumb:hover {
+        background: #FD3628; /* Color of the scrollbar thumb on hover */
+    }
+}
+
+body > .skiptranslate {
+    display: none;
 }
