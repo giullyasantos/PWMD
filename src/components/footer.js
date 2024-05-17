@@ -39,7 +39,7 @@ const Footer = () => {
                 </div>
 		<a href='https://www.google.com/maps/dir//people+who+make+a+difference/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88e77e78e4fa3c8d:0x5e24cac5ad0dbe0e?sa=X&ved=1t:3061&ictx=111' id='address'>7061 Grand National Dr. Suite: 105 B - Orlando, FL 32819</a>
                 <p>The Lord is my Shepherd, I shall not want! - Psalms 23:1</p>
-                <p style={{ fontSize: '0.65em' }} id='credit'>&copy; 2024 People Who Make A Difference<br/>Developed and Designed by <a href="google.com" id='giullya'>Giullya Santos</a></p>
+                <p style={{ fontSize: '0.65em' }} id='credit'>&copy; 2024 People Who Make A Difference<br/>Developed and Designed by <a href="https://www.linkedin.com/in/giullya-souza-santos-01668a23b/" id='giullya'>Giullya Santos</a></p>
 
             </div> 
             <div className="selections">
