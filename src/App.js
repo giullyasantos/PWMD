@@ -16,11 +16,6 @@ function App() {
             <div className="app-container"> {/* Wrap your Routes in a container */}
                 <Routes>
                     <Route path='/' element={<Home/>} />
-                    <Route path='/about' element={<About/>} />
-                    <Route path='/donate' element={<Donate/>} />
-                    <Route path="/faq" element={<FAQ/>} />
-                    <Route path="/projects" element={<Projects/>} />
-                    <Route path='/volunteer' element={<Volunteer/>} />
                 </Routes>
             </div>
         </Router>
