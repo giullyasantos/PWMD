@@ -691,6 +691,11 @@ p {
     height: auto;
   }
 
+  .home-page, .our-mission, .ways-help, .book{
+    margin-left: 0px;
+    width: 100%;
+  }
+
   .home-page, .our-mission, .ways-help, .book, .testimonials, .call-to-action{
     margin-left: 0px;
   }
