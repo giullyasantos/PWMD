@@ -1445,12 +1445,12 @@ p {
 /*PROJECTS PAGE ENDS*/
 /*DONATE PAGE*/
 
-@keyframes scroll25 {
+@keyframes scroll20 {
   0%{
     transform: translateX(0);
   }
   100%{
-    transform: translateX(calc(-15em * 25));
+    transform: translateX(calc(-15em * 20));
   }
 }
 
@@ -1463,8 +1463,8 @@ p {
   }
 
   .slide-track{
-    width: calc(15em * 50);
-    animation: scroll25 60s linear infinite;
+    width: calc(15em * 40);
+    animation: scroll20 60s linear infinite;
   }
 
   h2, h4{

@@ -103,22 +103,13 @@ function Donate() {
                         <a href='https://akumin.com/'><img src={akumin} alt="Akumin"/></a>
                     </div>
                     <div className='slide'>
-                        <a href='https://www.hispanicfederation.org/'><img src={hispanicfed} alt="Hispanic Federation"/></a>
-                    </div>
-                    <div className='slide'>
                         <a href='https://brinkimmigration.com/'><img src={brink} alt="Brink"/></a>
                     </div>
-                    <div className='slide'>
-                        <a href='https://resurrectwoodrefinishing.com/'><img src={resurrect} alt="Ressurect Wood"/></a>
-                    </div>  
                     <div className='slide'>
                         <a href='https://www.cgdentistorlando.com/'><img src={cg} alt="Cg Dentist"/></a>
                     </div>
                     <div className='slide'>
                         <a href='https://celebrationlanguage.com/'><img src={classcompany} alt="Celebration Education Institute"/></a>
-                    </div>
-                    <div className='slide'>
-                        <a href='http://www.rainbowrealpainting.com/'><img src={rainbow} alt="Rainbow Real Painting"/></a>
                     </div>
                     <div className='slide'>
                         <a href='https://www.dmathewslaw.com/'><img src={donmatt} alt="Don Matthews Law"/></a>
@@ -152,10 +143,7 @@ function Donate() {
                     </div>   
                     <div className='slide'>
                         <a href='https://resurrectwoodrefinishing.com/'><img src={resurrect} alt="Ressurect Wood"/></a>
-                    </div>   
-                    <div className='slide'>
-                        <a href='https://cruzaleguicoaching.com/'><img src={susancruzalegui} alt="Susan Cruzalegui Life Coach"/></a>
-                    </div>   
+                    </div>    
                     <div className='slide'>
                         <a><img src={uhcn} alt="UHCN"/></a>
                     </div> 
@@ -168,11 +156,68 @@ function Donate() {
                     <div className='slide'>
                         <a href='https://www.instagram.com/us.feetmaster/'><img src={usfoot} alt="US Footcare"/></a>
                     </div>  
+
+                    <div className='slide'>
+                        <a href='https://2easyinsurance.com/'><img src={twoeasy} alt="2easy Insurance"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://akumin.com/'><img src={akumin} alt="Akumin"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://brinkimmigration.com/'><img src={brink} alt="Brink"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://www.cgdentistorlando.com/'><img src={cg} alt="Cg Dentist"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://celebrationlanguage.com/'><img src={classcompany} alt="Celebration Education Institute"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://www.dmathewslaw.com/'><img src={donmatt} alt="Don Matthews Law"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://www.floridachristianuniversity.edu/'><img src={fcu} alt="Florida Christian University"/></a>
+                    </div>
                     <div className='slide'>
                         <a href='https://godshouseorlando.com/'><img src={godshouse} alt="God's House"/></a>
                     </div>
+                    <div className='slide'>
+                        <a href='https://www.hispanicfederation.org/'><img src={hispanicfed} alt="Hispanic Federation"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://www.kendrascott.com/'><img src={kendrascott} alt="Kendra Scott"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://instagram.com/nl_insurance/'><img src={nlinsurance} alt="NL Insurance"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://cruzaleguicoaching.com/'><img src={susancruzalegui} alt="Susan Cruzalegui Life Coach"/></a>
+                    </div> 
+                    <div className='slide'>
+                        <a href='https://megastore.perfumeland.com/'><img src={perfumeland} alt="Perfumeland"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='http://www.rainbowrealpainting.com/'><img src={rainbow} alt="Rainbow Real Painting"/></a>
+                    </div>
+                    <div className='slide'>
+                        <a href='https://redeemerprinting.com/'><img src={redeemer} alt="Redeemer Printing"/></a>
+                    </div>   
+                    <div className='slide'>
+                        <a href='https://resurrectwoodrefinishing.com/'><img src={resurrect} alt="Ressurect Wood"/></a>
+                    </div>    
+                    <div className='slide'>
+                        <a><img src={uhcn} alt="UHCN"/></a>
+                    </div> 
+                    <div className='slide'>
+                        <a href='https://ultrasoundcarespecialist.com/'><img src={ultrasound} alt="Ultrasound"/></a>
+                    </div>   
+                    <div className='slide'>
+                        <a href='https://www.ups.com/us/en/Home.page'><img src={ups} alt="UPS"/></a>
+                    </div>   
+                    <div className='slide'>
+                        <a href='https://www.instagram.com/us.feetmaster/'><img src={usfoot} alt="US Footcare"/></a>
+                    </div>  
 
-    
                 </div>
             </div>
             <a className='underline-animation' href= 'https://form.jotform.com/241544874823160'><h4>Become A Member</h4></a>

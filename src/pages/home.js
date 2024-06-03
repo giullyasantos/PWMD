@@ -4,8 +4,8 @@ import React, { useState, useEffect, useRef} from 'react';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import Home1 from '../images/home/first-page/home1.jpg';
-import Home2 from '../images/home/first-page/home2.png';
+import Home1 from '../images/home/first-page/home1.JPG';
+import Home2 from '../images/home/first-page/home2.jpeg';
 import Home3 from '../images/home/first-page/home3.jpg';
 import Home4 from '../images/home/first-page/home4.png';
 import Home5 from '../images/home/first-page/home5.png';
