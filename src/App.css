@@ -418,6 +418,7 @@ p {
 
 .home-page, .our-mission, .ways-help, .book{
   margin-left: 70px;
+  width: calc(100% - 70px);
 }
 
 .grid{

@@ -175,7 +175,7 @@ function Donate() {
     
                 </div>
             </div>
-            <a className='underline-animation' href= 'https://bdad99f6-ecd7-46cf-bf52-d53f84a6e18f.filesusr.com/ugd/5ba94e_0edfd157ef4d402a8a414685d799a826.pdf'><h4>Become A Member</h4></a>
+            <a className='underline-animation' href= 'https://form.jotform.com/241544874823160'><h4>Become A Member</h4></a>
         </section>
         <section className='items-donation'>
             <div className='right-bottom'>
