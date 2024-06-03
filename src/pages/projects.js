@@ -13,9 +13,6 @@ import fooddonation from '../images/help/fooddonation.jpg';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import financial from '../images/home/financial.webp';
-import fundraiser from '../images/home/fundraiser.webp';
-
 function GetHelp() {
   return (
     <div className='project'>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../App.css"; // Adjust path if needed
-import { Link, useLocation } from 'react-router-dom';
+import {useLocation } from 'react-router-dom';
 
 const SideNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,19 +17,19 @@ const SideNavbar = () => {
         <nav className='nav'>
           <ul>
             <li className={location.pathname === "/" ? "active" : ""}>
-              <Link to="/">HOME PAGE</Link>
+              <a href="/">HOME PAGE</a>
             </li>
             <li className={location.pathname.startsWith("/about") ? "active" : ""}>
-              <Link to="/about">ABOUT US</Link>
+              <a href="/about">ABOUT US</a>
             </li>
             <li className={location.pathname.startsWith("/projects") ? "active" : ""}>
-              <Link to="/projects">GET HELP</Link>
+              <a href="/projects">GET HELP</a>
             </li>
             <li className={location.pathname.startsWith("/donate") ? "active" : ""}>
-              <Link to="/donate">DONATE</Link>
+              <a href="/donate">DONATE</a>
             </li>
             <li className={location.pathname.startsWith("/volunteer") ? "active" : ""}>
-              <Link to="/volunteer">VOLUNTEER</Link>
+              <a href="/volunteer">VOLUNTEER</a>
             </li>
           </ul>
           <div id='google_translate_element'></div>

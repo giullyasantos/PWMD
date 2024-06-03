@@ -1,17 +1,14 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
-import PWMD from '../images/pwmd.webp';
-import Test from '../images/test.webp';
+
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import volunteer1 from '../images/volunteer/volunteer1.jpg';
 import volunteer3 from '../images/volunteer/volunteer3.jpg';
 import volunteer4 from '../images/volunteer/volunteer4.jpg';
 import volunteer5 from '../images/volunteer/volunteer5.jpg';
 import volunteer6 from '../images/volunteer/volunteer6.jpg';
 import volunteer7 from '../images/volunteer/volunteer7.jpg';
-import volunteer8 from '../images/volunteer/volunteer8.jpg';
 import volunteer9 from '../images/volunteer/volunteer9.jpg';
 import volunteer10 from '../images/volunteer/volunteer10.jpg';
 import volunteer11 from '../images/volunteer/volunteer11.jpg';
@@ -23,8 +20,6 @@ import volunteer16 from '../images/volunteer/volunteer16.jpg';
 import volunteer17 from '../images/volunteer/volunteer17.jpg';
 import volunteer18 from '../images/volunteer/volunteer18.jpg';
 import volunteer19 from '../images/volunteer/volunteer19.jpg';
-import volunteer20 from '../images/volunteer/volunteer20.jpg';
-import volunteer21 from '../images/volunteer/volunteer21.jpg';
 import volunteer22 from '../images/volunteer/volunteer22.jpg';
 import volunteer23 from '../images/volunteer/volunteer23.jpg';
 

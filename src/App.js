@@ -13,7 +13,6 @@ import Projects from './pages/projects';
 import './App.css'; 
 
 function App() {
-
     return (
         <Router>
             <div className="app-container">

@@ -416,7 +416,7 @@ p {
   margin-left: 3%;
 }
 
-.home-page, .our-mission, .ways-help, .book, .testimonials, .call-to-action{
+.home-page, .our-mission, .ways-help, .book{
   margin-left: 70px;
 }
 
@@ -746,10 +746,19 @@ p {
 
   .our-mission .left-top{
     padding-top: 0;
+    margin-bottom: 10%;
   }
 
   .our-mission .right-bottom{
     flex-direction: column;
+    
+    h3{
+      font-size: 1.25em;
+    }
+
+    li{
+      font-size: 0.8em;
+    }
   }
   
   .our-mission a, .ways-help a{
@@ -918,7 +927,17 @@ p {
   justify-content: center;
 }
 
+@keyframes fadein{
+  0%{
+   opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
 .team {
+  animation: fadein 2s ease;
   background-color: #027593;
   display: flex;
   flex-direction: column;
@@ -966,12 +985,12 @@ p {
   flex-direction: column;
 }
 
-.ceo {
- height:70vh;
+.about-mission .left-top p, .donate-home p{
+  width: 60%;
 }
 
-.about-mission .left-top p, .ceo p, .donate-home p{
-  width: 60%;
+.ceo p{
+  width: 80%;
 }
 
 .about-mission .left-top, .about .donate{
@@ -1064,6 +1083,14 @@ p {
   height: auto;
 }
 
+.ceo{
+  margin-top: 5%;
+  li{
+    width: 80%;
+    font-size: 0.8em;
+  }
+}
+
 @media (max-width: 1024px) {  
   .ceo{
     flex-direction: row;
@@ -1089,7 +1116,7 @@ p {
      font-size: 0.5em;
   }
 
-  .team h4, .about-mission .left-top p, .ceo p {
+  .team h4, .about-mission .left-top p {
     width: 80%;
     font-size: 0.8em;
   }  
@@ -1127,6 +1154,7 @@ p {
 
 .volunteer-home {
   flex-direction: column;
+  animation: fadein 2s ease;
 }
 
 .volunteer-home p{

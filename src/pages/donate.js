@@ -1,11 +1,10 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
-import PWMD from '../images/pwmd.webp';
-import Test from '../images/donate/amazon.jpg';
+
 import donor from '../images/donate/donate.jpg';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
-import { Link, useLocation } from 'react-router-dom';
+
 import twoeasy from'../images/donate/sponsors/2easy.jpeg';
 import akumin from'../images/donate/sponsors/akumin.PNG';
 import brink from'../images/donate/sponsors/brink.jpeg';
@@ -59,13 +58,13 @@ function Donate() {
         <SideNavbar/>
         <section className='donate-home'>
             <div className='left-top'>
-                <img src={donor} alt="Steven Whiteacre Donor To People Who Make A Difference"/>
+                <img src={donor} alt="Donate to People Who Make A Difference Foundation"/>
             </div>
             <div className='right-bottom'>
                 <h2>Your Generosity Makes A Difference!</h2>
                 <p>Your support is vital. There are various ways to contribute, each making a meaningful impact on the lives of those in need. Please choose the method that best suits you and join our mission today.</p>
 		<div className='next-to-each-other'>
-                  <a href=''> Zelle
+                  <a href='https://enroll.zellepay.com/qr-codes?data=ewogICJuYW1lIiA6ICJNQVJDSUEgUk9NRVJPIE1JTklTVFJZIElOQyIsCiAgInRva2VuIiA6ICI0MDc3MzkwNjEyIiwKICAiYWN0aW9uIiA6ICJwYXltZW50Igp9'> Zelle
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
