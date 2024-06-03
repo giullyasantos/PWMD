@@ -52,7 +52,6 @@ const mobileImages = [
 
 
 function Home() {
-
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handlePrev = () => {
@@ -99,21 +98,11 @@ function Home() {
             <div className='left-top'>
                 <h2>Our Mission</h2>
                 <p>At People Who Make A Difference, we envision a world where no individual is deprived of healthcare due to lack of insurance. Our mission is clear: to remove financial barriers to healthcare for the uninsured by providing essential support and resources. </p> 
-                <div className='end' style={{ marginTop: '5%' }}>
-                    <Link to="/about"> Learn More
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </Link>
-                 </div>    
             </div>
             <div className='right-bottom'>
                 <div className='description'>
                     <h2>Helping the Uninsured: Join Us in Making Healthcare Accessible</h2>
-                    <h3>210,566 Uninsured Individuals in Orange County, FL as of 2021. By providing Financial Aid for Essential Health Services Allowed Us To:​</h3>
+                    <h3>According to the <a className='special' href="https://flhealthcharts.gov/ChartsDashboards/rdPage.aspx?rdReport=NonVitalIndNoGrpCounts.Dataviewer">FL Health Charts</a>, there are 2,571,518 Uninsured Individuals in Florida as of 2022. By providing Financial Aid for Essential Health Services Allowed Us To:​</h3>
                     <div className='accomplishments'>
                     <ul>
                         <li>Reduce Mortality and Premature Death</li>
@@ -134,17 +123,12 @@ function Home() {
         </div>
         <section className='ways-help'>
             <div className='left-top'>
-                <h2>Need Help? We're Here for You.</h2>
-                <p>Facing healthcare challenges without insurance can be overwhelming. At People Who Make A Difference, we understand the struggle and are dedicated to providing support. If you are uninsured and need assistance with healthcare costs, we encourage you to reach out.</p>
-                <p style={{fontWeight: 'bold'}}>Take the first step towards accessible healthcare:</p>
-		        <ul>
-                  <li>Learn more about our eligibility requirements and application process.</li>
-                  <li>Explore our available resources and upcoming events.</li>
-                  <li>Contact us today to discuss your specific needs.</li>
-                </ul>
-                <p>Together, we can make a difference in your health and well-being. You are not alone.</p>
+                <h2>Need Help? We are Here for You.</h2>
+                <p>Do you have a chronic health condition? Need to go to the doctor? Do not know where to go? Can not afford your prescription?</p>
+                
+                <p><strong>We can assist you!</strong> Together, we can make a difference in your health and well-being. You are not alone.</p>
 		        <div className='end' style={{ marginTop: '5%' }}>
-                    <Link to="/projects">Explore Resources
+                    <Link to="/projects">Apply Now!
                         <div class="icon">
                             <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -179,6 +163,14 @@ function Home() {
                 <button className="next" onClick={handleNext}><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 0c-6.623 0-12 5.377-12 12s5.377 12 12 12 12-5.377 12-12-5.377-12-12-12zm0 1c-6.071 0-11 4.929-11 11s4.929 11 11 11 11-4.929 11-11-4.929-11-11-11zm4.828 11.5l-4.608 3.763.679.737 6.101-5-6.112-5-.666.753 4.604 3.747h-11.826v1h11.828z"/></svg></button>
               </div>
             </div>
+            <a id="review-btn" href="https://search.google.com/local/writereview?placeid=ChIJjTz65Hh-54gRDr4NrcXKJF4"> 
+                Write Review
+                <div class="icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" id="star">
+                        <path fill="none" stroke="#200E32" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.2135354,0.441329894 L12.5301907,5.09668871 C12.6437709,5.3306716 12.8673229,5.49423715 13.1274534,5.53368599 L18.3127795,6.28282419 C18.5232013,6.31151358 18.713271,6.4218659 18.8407265,6.58934431 C18.9681821,6.75682272 19.0224584,6.9675444 18.9914871,7.17465538 C18.9654336,7.34490401 18.8826605,7.50177662 18.7562018,7.62057098 L15.0006864,11.2592422 C14.8108765,11.4385657 14.7257803,11.7002187 14.7744505,11.9548706 L15.679394,17.0828999 C15.7448774,17.5054355 15.4552147,17.9019154 15.0278347,17.9747311 C14.8516089,18.001936 14.6711642,17.9738576 14.5120169,17.8944663 L9.88775575,15.4776038 C9.65675721,15.3522485 9.37670064,15.3522485 9.1457021,15.4776038 L4.49429266,17.9123029 C4.1040442,18.1096521 3.62530757,17.962958 3.41740993,17.5823254 C3.33635184,17.4288523 3.30778438,17.2536748 3.33596502,17.0828999 L4.24090849,11.9548706 C4.28467865,11.7005405 4.20030563,11.441111 4.01467262,11.2592422 L0.23200891,7.62057098 C-0.0773363034,7.31150312 -0.0773363034,6.81484985 0.23200891,6.50578199 C0.358259148,6.3905834 0.515216648,6.31324177 0.684480646,6.28282419 L5.86980673,5.53368599 C6.12870837,5.49136141 6.35105151,5.32868032 6.46706943,5.09668871 L8.78372471,0.441329894 C8.87526213,0.25256864 9.04026912,0.108236628 9.24131794,0.0410719808 C9.44236677,-0.0260926667 9.66241783,-0.0103975019 9.85155801,0.0845974179 C10.0076083,0.16259069 10.1343954,0.287540724 10.2135354,0.441329894 Z" transform="translate(2.5 3)"></path>
+                    </svg>
+                </div>
+            </a>
         </section>
         <section className='call-to-action'>
             <div className='get-involved'>

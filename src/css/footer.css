@@ -12,6 +12,10 @@
   color: rgb(2,117,147);
 }
 
+#credit{
+  color: rgb(2,117,147);
+}
+
 .footer .logo{
   height: 6em;
 }
@@ -32,7 +36,7 @@
 #address, #giullya{
   color: currentColor;
   text-decoration: underline;
-  transition: color 400ms ease;
+  transition: color 200ms ease;
 }
 
 .footer #address{
@@ -45,14 +49,19 @@
 }
 
 .footer #address:hover, #giullya:hover, .social-media div:hover path  {
-  color: rgb(253, 54, 40);
-  fill: rgb(253, 54, 40);
+  color: #fd5a28f3;
+  fill: #fd5a28f3;
 }
 
 .footer .side1 p{
   width: 70%;
   margin-left: 2%;
-  color: rgb(2,117,147);
+
+}
+
+.verse p{
+  margin-top: 3em;
+  color: #fd5a28f3;
 }
 
 .selections {
@@ -63,9 +72,8 @@
 }
 
 .footer h4{
-  color: rgb(253, 54, 40);
+  color: #fd5a28f3;
 }
-
 .footer p{
   font-size: 13px;
 }
@@ -84,17 +92,19 @@
   cursor: pointer;
 }
 
-.selections .underline-animation::after{
-  width: 30%;
+.links{
+  display: inline-block;
+  position: relative;
+  color: #027593;
+  transition: 400ms ease;
 }
 
-.selections #abt-us .underline-animation::after{
-  width: 40%;
+.links:hover{
+  color: #fd5a28f3
 }
 
-.selections #get-help .underline-animation::after{
-  width: 80%;
-}
+
+
 
 @media (max-width: 1024px) {
   .footer .logo{
@@ -139,7 +149,7 @@
     align-items: start;
   }
 
-  .selections h4, .selections .underline-animation{
+  .selections h4, .selections .links{
     font-size: 0.75em;
   }
 

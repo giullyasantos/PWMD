@@ -8,9 +8,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import marcia from '../images/about/team/marcia.jpg';
 import adriana from '../images/about/team/adriana.jpg';
-import diogo from '../images/about/team/diogo.jpg';
-import gilson from '../images/about/team/gilson.jpg';
-import rebecca from '../images/about/team/rebecca.jpg';
+
 import susan from '../images/about/team/susan.jpg';
 import edson from '../images/about/team/edson.jpg';
 
@@ -22,7 +20,6 @@ import ame from '../images/about/slider/ame.jpg';
 import volunteers from '../images/about/slider/volunteers.jpg';
 import fundraiser from '../images/about/slider/fundraiser.jpeg';
 import donor from '../images/about/slider/donor.jpg';
-import children from '../images/about/slider/children.jpg';
 import marciaromero from '../images/about/slider/marcia.jpg';
 import clothes from '../images/about/slider/clothes.jpg';
 
@@ -57,38 +54,15 @@ function About() {
 	         <h6>Business Owner, Dentist & Life Coach</h6>
 	       </span>
 	     </div>
-             <div className='div4'>
-               <img src={marcia} alt="hey"/>
+      <div className='div4'>
+         <img src={marcia} alt="hey"/>
 	       <span className="hover-text">
 	         <h3>Marcia Romero</h3>
 	         <h5>PWMD Founder | CEO</h5>
 	         <h6>Chaplain II At Advent Health Orlando</h6>
 	       </span>
 	     </div>
-             <div className='div5'>
-               <img src={diogo} alt="hey"/>
-	       <span className="hover-text">
-	         <h3>Diogo Esteves</h3>
-	         <h5>Board Member</h5>
-	         <h6>Strategy Group Global</h6>
-	       </span>
-	     </div>
-             <div className='div6'>
-               <img src={gilson} alt="hey"/>
-	       <span className="hover-text">
-	         <h3>Gilson De Oliveira</h3>
-	         <h5>Board Member</h5>
-	         <h6>Alpha One Services LLC</h6>
-	       </span>
-	     </div>
-             <div className='div7'>
-               <img src={rebecca} alt="hey"/>
-	       <span className="hover-text">
-	         <h3>Rebecca Sayago</h3>
-	         <h5>Board Member</h5>
-	         <h6>Primary Care Access Network (PCAN)</h6>
-	       </span>
-	     </div>
+            
            </div>
            <h2>A Committed Team Making a Difference</h2>
            <h4>We are a group of individuals who are passionate about empowering residents to become healthy and productive members of their communities.</h4>
@@ -96,8 +70,8 @@ function About() {
         <section className='about-mission'>
             <div className='left-top'>
                 <h2>Building a Healthier Community, One Person at a Time</h2>
-                 <p>It is common knowledge that caring for our health is essential. Yet, for many, access to quality healthcare feels more like a luxury than a basic necessity. In fact, a staggering <b>43 million people</b> in our country <b>do not have health insurance</b>, which they need to stay well. This not only impacts individual lives but also puts a strain on families and communities.<br/><br/>
-That's where People Who Make a Difference comes in. Since 2011, we've been dedicated to bridging this gap by <b>offering a helping hand</b> to those without insurance. We provide <b>financial assistance</b> for essential medical care, from check-ups to urgent treatments. But we're not just about covering costs; we're about empowering individuals through <b>education and support</b>, so they can make informed decisions about their health.<br/><br/>
+                 <p>It is common knowledge that caring for our health is essential. Yet, for many, access to quality healthcare feels more like a luxury than a basic necessity. In fact, a staggering <a className='special' href='https://www.cdc.gov/nchs/pressroom/nchs_press_releases/2023/202305.htm'><b>27.6 million people</b></a> in our country <b>do not have health insurance</b>, which they need to stay well. This not only impacts individual lives but also puts a strain on families and communities.<br/><br/>
+That's where People Who Make a Difference comes in. Since 2011, we have been dedicated to bridging this gap by <b>offering a helping hand</b> to those without insurance. We provide <b>financial assistance</b> for essential medical care, from check-ups to urgent treatments. But we are not just about covering costs; we are about empowering individuals through <b>education and support</b>, so they can make informed decisions about their health.<br/><br/>
 Together, we can create a future where healthcare is truly accessible for everyone, regardless of their financial situation. Join us in building a healthier, more equitable world – because everyone deserves the chance to thrive.</p>
             </div>
             <div className='photo-slider'>
@@ -118,7 +92,7 @@ Together, we can create a future where healthcare is truly accessible for everyo
                         <img src={donor} alt="hey"/>
                     </div>
                     <div className='slide'>
-                        <img src={children} alt="hey"/>
+                        <img src={food2} alt="hey"/>
                     </div>
                     <div className='slide'>
                         <img src={marciaromero} alt="hey"/>
@@ -145,7 +119,7 @@ Together, we can create a future where healthcare is truly accessible for everyo
                         <img src={donor} alt="hey"/>
                     </div>
                     <div className='slide'>
-                        <img src={children} alt="hey"/>
+                        <img src={food2} alt="hey"/>
                     </div>
                     <div className='slide'>
                         <img src={marciaromero} alt="hey"/>
