@@ -2,7 +2,7 @@ import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
 import Test from '../images/donate/amazon.jpg';
-import donor from '../images/donate/steven whiteacre.jpg';
+import donor from '../images/donate/donate.jpg';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 import { Link, useLocation } from 'react-router-dom';

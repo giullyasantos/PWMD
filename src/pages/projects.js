@@ -1,7 +1,13 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 import PWMD from '../images/pwmd.webp';
-import crunches from '../images/crunches.jpg';
+
+import crunches from '../images/help/crunches.jpg';
+import walker from '../images/help/walker.jpg';
+import walker2 from '../images/help/walker2.jpg';
+import walker3 from '../images/help/walker3.jpg';
+
+
 import foodpresident from '../images/help/foodpresident.jpg';
 import fooddonation from '../images/help/fooddonation.jpg';
 import SideNavbar from '../components/navbar';
@@ -73,9 +79,14 @@ function GetHelp() {
             </a>
         </section>    
         <section className='wheelchair'>
-          <div className='photo'>
-            <img src={crunches} alt="hey"/>
-          </div>
+          <div className='left-top'>
+            <div className='walkers'>
+              <div class="div1 photo"><img src={crunches} alt="hey"/></div>
+              <div class="div2 photo"><img src={walker} alt="hey"/></div>
+              <div class="div3 photo"><img src={walker2} alt="hey"/></div>
+              <div class="div4 photo"><img src={walker3} alt="hey"/></div>
+            </div>
+	  </div>
           <div className='right-bottom'>
             <h2>WHEELCHAIRS, CRUTCHES, WALKERS</h2>
             <p>Are you or someone you know in need of mobility aids? You can borrow a wheelchair, walker or crutches from us for up to 8 weeks. We ask for a donation of $15.00 and a deposit of $50.00, the deposit will be refunded if the items are returned in the same good condition as when borrowed.</p>

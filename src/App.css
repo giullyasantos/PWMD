@@ -31,7 +31,7 @@ html {
   left: -36vw;
   width: 36vw;
   height: 100%;
-  background-color: #fd5a28f3;
+  background-color: #fd6232;
   transition: left 500ms ease;
 }
 
@@ -44,7 +44,7 @@ html {
   width: 70px;
   position: absolute;
   left: 36vw;
-  background-color: #fd5a28f3;
+  background-color: #fd6232;
   color: white;
   border: none;
   cursor: pointer;
@@ -338,7 +338,7 @@ section a:active .icon {
 
 
 .logo{
-  height: 9em;
+  height: 8em;
 }
 
 h1{
@@ -408,12 +408,42 @@ p {
 }
 
 /* HOME PAGE */
-.home-page, .our-mission, .testimonials, .call-to-action, .ways-help{
+.home-page, .our-mission, .testimonials, .ways-help{
   height: 100vh;
 }
 
 .home-page .logo{
   margin-left: 3%;
+}
+
+.home-page, .our-mission, .ways-help, .book, .testimonials, .call-to-action{
+  margin-left: 70px;
+}
+
+.grid{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 2 / 1 / 3 / 2; }
+  .div4 { grid-area: 2 / 2 / 3 / 3; }
+  .div5 { grid-area: 3 / 1 / 4 / 3; }
+
+    .photo img {
+      object-fit: fill;
+      width: 100%;
+      display: block; 
+    }
+
+}
+
+ .call-to-action{
+  margin-bottom: 25%;
 }
 
 .home-page .right-bottom, .donate-home .right-bottom{
@@ -565,6 +595,41 @@ p {
   }
 }
 
+.book{
+  margin-top: 5%;
+  gap: 2em;
+  background-color: #fd6232;
+  
+
+  .right-bottom{
+    p, h2{
+      color: white;
+    }
+
+    p{
+      width: 60%;
+    }
+
+    a{
+      margin-top: 3%;
+      margin-bottom: 5%;
+      width: 3em;
+      background: white;
+      color: rgb(158, 33, 24);
+      box-shadow: inset 0 0 1.6em -0.6em rgb(170 170 170);
+
+      .icon{
+        background: white;
+        box-shadow: 0.1em 0.1em 0.6em 0.2em rgb(205 205 205);
+      }
+    }
+  } 
+  
+  .second{
+    display: none;
+  }
+}
+
 .left-top .end{
   display: flex;
   align-items: start;
@@ -623,6 +688,10 @@ p {
 @media (max-width: 1024px) {
   .our-mission, .testimonials, .get-involved, .ways-help{
     height: auto;
+  }
+
+  .home-page, .our-mission, .ways-help, .book, .testimonials, .call-to-action{
+    margin-left: 0px;
   }
 
   p{
@@ -688,6 +757,10 @@ p {
     font-size: 0.65em;
   }
 
+  .our-mission .special{
+    font-size: 1em;
+  }
+
   .our-mission h2 {
     margin-bottom: 0;
   }
@@ -748,6 +821,39 @@ p {
     width: 5em;
     font-size: 0.75em;
     margin-top: 3em;
+  }
+
+  .book{
+    gap: 0;
+
+    h2{ 
+      margin-bottom: 0;
+    }
+    .left-top{ 
+      margin-left: 0;
+    }
+    .right-bottom{ 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      p{
+        width: auto;
+      }
+
+      a{
+        width: auto;
+        font-size: 0.8em;
+   
+      }
+    }
+    .second{
+      display: block;
+    }
+    .first{
+      display: none;
+    }
   }
 }
 
@@ -1146,6 +1252,7 @@ p {
   }
 }
 .wheelchair{
+  margin-left: 70px;
   .photo img{
     object-fit: contain;
     width: 100%;
@@ -1237,6 +1344,21 @@ p {
   }
 }
 
+.walkers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .div1 { grid-area: 1 / 1 / 2 / 2; }
+  .div2 { grid-area: 1 / 2 / 2 / 3; }
+  .div3 { grid-area: 2 / 1 / 3 / 2; }
+  .div4 { grid-area: 2 / 2 / 3 / 3; }
+}
+
+
 @media (max-width: 1024px) {
   .food {
     margin-top: 5em;
@@ -1254,6 +1376,7 @@ p {
   }
 
   .wheelchair{
+    margin-left: 0;
     margin-top: 10em;
     flex-direction: row;
   }
@@ -1270,10 +1393,19 @@ p {
 @media (max-width: 768px) {
   .wheelchair{
     flex-direction: column;
-    .photo{
-      width: 80%;
-    }
+    margin-top: 3em;
   }
+
+  .walkers {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+  }
+
+
 }
 
 /*PROJECTS PAGE ENDS*/

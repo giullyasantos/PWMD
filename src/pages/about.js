@@ -16,12 +16,14 @@ import ceo from '../images/about/marciaceo.jpg';
 
 import food2 from '../images/about/slider/food2.jpg';
 import food from '../images/about/slider/food.jpg';
-import ame from '../images/about/slider/ame.jpg';
-import volunteers from '../images/about/slider/volunteers.jpg';
+import ame from '../images/about/slider/partner.jpg';
+import volunteers from '../images/about/slider/volunteers.JPG';
 import fundraiser from '../images/about/slider/fundraiser.jpeg';
 import donor from '../images/about/slider/donor.jpg';
 import marciaromero from '../images/about/slider/marcia.jpg';
 import clothes from '../images/about/slider/clothes.jpg';
+import dentist from '../images/about/slider/dentist.jpg';
+import dentist2 from '../images/about/slider/dentist2.jpg';
 
 function About() {
   return (
@@ -92,7 +94,7 @@ Together, we can create a future where healthcare is truly accessible for everyo
                         <img src={donor} alt="hey"/>
                     </div>
                     <div className='slide'>
-                        <img src={food2} alt="hey"/>
+                        <img src={dentist} alt="hey"/>
                     </div>
                     <div className='slide'>
                         <img src={marciaromero} alt="hey"/>
@@ -104,7 +106,7 @@ Together, we can create a future where healthcare is truly accessible for everyo
                         <img src={fundraiser} alt="hey"/>
                     </div>
                                         <div className='slide'>
-                        <img src={food2} alt="hey"/>
+                        <img src={dentist} alt="hey"/>
                     </div>
                     <div className='slide'>
                         <img src={ame} alt="hey"/>
@@ -119,7 +121,7 @@ Together, we can create a future where healthcare is truly accessible for everyo
                         <img src={donor} alt="hey"/>
                     </div>
                     <div className='slide'>
-                        <img src={food2} alt="hey"/>
+                        <img src={dentist} alt="hey"/>
                     </div>
                     <div className='slide'>
                         <img src={marciaromero} alt="hey"/>
@@ -147,8 +149,17 @@ Together, we can create a future where healthcare is truly accessible for everyo
                 <img src={ceo} alt="hey"/>
             </div>
             <div className='right-bottom'>
-                <h2>Health Available For All</h2>
-                <p>We believe healthcare is a right. Our mission is to remove barriers preventing the uninsured from receiving medical care. Through outreach, education, and financial assistance, we make health services accessible to all, regardless of their circumstances.</p>        
+                <h2>Our Impact:</h2>
+                <p> Healthcare is a human right, according to us. Our mission is to remove barriers to medical care for the uninsured. As a nonprofit organization, we provide healthcare access to all, regardless of their circumstances, with outreach, education, and financial assistance. Since 2011, PWMD has <strong>helped over 3,500 uninsured families</strong> with healthcare costs.</p>
+		<h4>Recent Achievements:</h4>
+		<ul>
+		  <li>PWMD was financially awarded after the pandemic year (2020). Over the course of eight weeks,<br/> <strong>51 families were served</strong> with the funding.  The <strong>Emergency Assistance Fund</strong> assisted families<br/> from various backgrounds and locations.</li><br/>
+<li>
+We expanded our services from only two, to now six counties, including <br/><strong>Orange, Hillsborough, Miami-Dade, Seminole, Brevard, and Polk.</strong><br/> This allowed us to support more diverse families during a challenging pandemic period.</li>
+</ul>
+<p>
+Our mission and vision as an agency is to contribute to the growth of the population by providing financial subsidies for treatments. Partners in healthcare and finance are needed by PWMD.
+</p>        
             </div>
         </section>
       </div>

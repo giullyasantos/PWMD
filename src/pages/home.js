@@ -5,9 +5,18 @@ import { Link, useLocation } from 'react-router-dom';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
+import Home1 from '../images/home/first-page/home1.JPG';
+import Home2 from '../images/home/first-page/home2.png';
+import Home3 from '../images/home/first-page/home3.jpg';
+import Home4 from '../images/home/first-page/home4.png';
+import Home5 from '../images/home/first-page/home5.png';
+
 import PWMD from '../images/pwmd.webp';
-import HomePhoto from '../images/home/homepage.webp';
-import Event2011 from '../images/home/2011 event.webp';
+import Check from '../images/home/givinghelp.jpg';
+import CheckMobile from '../images/home/givinghelp2.jpg';
+import Book from '../images/home/book.jpg';
+import BookMobile from '../images/home/bookmobile.jpg';
+
 
 import alessandra from '../images/home/testimonials/alessandra.jpg';
 import claudia from '../images/home/testimonials/claudia.jpg';
@@ -82,10 +91,12 @@ function Home() {
         <SideNavbar/>
         <section className='home-page'>
             <div className='left-top'>
-                <div className='image-slider'>
-                    <div className='photo'>
-                        <img src={HomePhoto} alt="hey"/>
-                     </div>
+                <div class="grid">
+                  <div class="div1 photo"><img src={Home1} alt=""/></div>
+                  <div class="div2 photo"><img src={Home2} alt=""/> </div>
+                  <div class="div3 photo"><img src={Home3} alt=""/> </div>
+                  <div class="div4 photo"><img src={Home4} alt=""/> </div>
+                  <div class="div5 photo"><img src={Home5} alt=""/> </div>
                 </div>
             </div>
             <div className='right-bottom'>
@@ -112,13 +123,13 @@ function Home() {
                     </div>
                 </div>
                 <div className='image-slider' id='first'>
-                     <img src={Event2011} alt="TESTIMONIALS HERE"/>
+                     <img src={Check} alt="People Who Make A Difference Giving A $1080 Check to person in need of financial and medical assistance"/>
                 </div>
             </div>
         </section>
         <div className='extra'>
          <div className='image-slider' id='second'>
-              <img src={Event2011} alt="TESTIMONIALS HERE"/>
+              <img src={CheckMobile} alt="People Who Make A Difference Giving A $1080 Check to person in need of financial and medical assistance"/>
          </div>
         </div>
         <section className='ways-help'>
@@ -172,6 +183,29 @@ function Home() {
                 </div>
             </a>
         </section>
+	<section className='book'>
+	    <div className='left-top'>
+                <div className='image-slider'>
+                    <div className='photo first'>
+                        <img src={Book} alt="Daily Healing And Transformation, a Book by Marcia Romero"/>
+                     </div>
+                    <div className='photo second'>
+                        <img src={BookMobile} alt="Daily Healing And Transformation, a Book by Marcia Romero"/>
+                     </div>
+                </div>
+	    </div>
+	    <div className='right-bottom'>
+		<h2 className="first">Daily Healing And Transformation,<br/> a Book by Marcia Romero</h2>
+                <h2 className="second">Daily Healing And Transformation, a Book by Marcia Romero</h2>
+                <p>This incredible book depicts our CEO's inspiring journey from a difficult childhood and life-threatening illness to personal and professional success. With unwavering faith, Marcia forgave past humiliations and overcame bitterness, becoming known for her kindness. She sees herself as a continuous work in progress, embracing daily transformation.</p>
+		<p>Discover Marcia's remarkable story and let it inspire your own journey.</p> 
+		<a href="https://www.amazon.com/Daily-Healing-Transformation-Marcia-Romero/dp/6556421413/ref=sr_1_1?crid=2N0F72U85JAPW&keywords=daily+healing+and+transformation&qid=1686153989&sprefix=daily+healing+nd+transformation,aps,485&sr=8-1&fbclid=PAZXh0bgNhZW0CMTEAAaYy975kXKtqpVM0mGaOGv2IzKtuRndI3OUZqA0IyapKupmenzsXXPbn-_M_aem_AWa5j7QxDIPwtD7uOfg2mhfiXtmUFA46rq_9sL_O49yb-P60IUZlkf4lszdeXcPk5faIwd775j4UwNLXbaky_vpU">Shop
+                        <div class="icon">
+                            <svg version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path d="m 8.0159598,962.36215 c -1.6569,0 -3,1.34315 -3,3 0,1.65685 1.3431,3 3,3 l 9.5625002,0 10.3125,48.65625 c 0.408,1.8316 1.6084,3.356 3.125,3.3438 l 50,0 c 1.5849,0.022 3.042695,-1.4149 3.042695,-3 0,-1.5851 -1.457795,-3.0224 -3.042695,-3 l -47.5625,0 -1.2813,-6.0001 52.843795,0 c 1.3432,-0.01 2.6123,-1.033 2.9062,-2.3437 l 7,-30 c 0.3901,-1.74107 -1.122,-3.64346 -2.9062,-3.65625 l -67.437495,0 -1.625,-7.625 c -0.2839,-1.3321 -1.5755,-2.3764 -2.9375,-2.375 z m 17.8125002,16 62.406295,0 -5.593795,23.99995 -51.7188,0 z m 15.1875,44.00005 c -5.4873,0 -10,4.5126 -10,10 0,5.4873 4.5127,10 10,10 5.4873,0 10,-4.5127 10,-10 0,-5.4873 -4.5127,-10 -10,-10 z m 30,0 c -5.4873,0 -10,4.5126 -10,10 0,5.4873 4.5127,10 10,10 5.4873,0 10,-4.5127 10,-10 0,-5.4873 -4.5127,-10 -10,-10 z m -30,6 c 2.2447,0 4,1.7553 4,4 0,2.2447 -1.7553,4 -4,4 -2.2445,0 -4,-1.7554 -4,-4 0,-2.2446 1.7555,-4 4,-4 z m 30,0 c 2.2447,0 4,1.7553 4,4 0,2.2447 -1.7553,4 -4,4 -2.2445,0 -4,-1.7554 -4,-4 0,-2.2446 1.7555,-4 4,-4 z" fill="currentColor" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+                        </div>
+                </a>
+	    </div>
+	</section>
         <section className='call-to-action'>
             <div className='get-involved'>
                 <lord-icon id='icon-talk' src="https://cdn.lordicon.com/wzrwaorf.json" trigger="in" delay="400" state="in-reveal" colors="primary:#fd3628,secondary:#027593"></lord-icon>

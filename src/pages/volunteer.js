@@ -6,7 +6,6 @@ import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
 import volunteer1 from '../images/volunteer/volunteer1.jpg';
-import volunteer2 from '../images/volunteer/volunteer2.jpg';
 import volunteer3 from '../images/volunteer/volunteer3.jpg';
 import volunteer4 from '../images/volunteer/volunteer4.jpg';
 import volunteer5 from '../images/volunteer/volunteer5.jpg';
@@ -26,7 +25,8 @@ import volunteer18 from '../images/volunteer/volunteer18.jpg';
 import volunteer19 from '../images/volunteer/volunteer19.jpg';
 import volunteer20 from '../images/volunteer/volunteer20.jpg';
 import volunteer21 from '../images/volunteer/volunteer21.jpg';
-
+import volunteer22 from '../images/volunteer/volunteer22.jpg';
+import volunteer23 from '../images/volunteer/volunteer23.jpg';
 
 
 
@@ -38,10 +38,10 @@ function Volunteer() {
             <div className='photo-slider'>
                 <div className='slide-track first'>
        		  <div className='slide'>
-                    <img src={volunteer1} alt='volunteer at nonprofit'/> 
+                    <img src={volunteer22} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
-                    <img src={volunteer2} alt='volunteer at nonprofit'/> 
+                    <img src={volunteer23} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
                     <img src={volunteer3} alt='volunteer at nonprofit'/> 
@@ -65,10 +65,10 @@ function Volunteer() {
                     <img src={volunteer9} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
-                    <img src={volunteer1} alt='volunteer at nonprofit'/> 
+                    <img src={volunteer22} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
-                    <img src={volunteer2} alt='volunteer at nonprofit'/> 
+                    <img src={volunteer23} alt='volunteer at nonprofit'/> 
                 </div>
                 <div className='slide'>
                     <img src={volunteer3} alt='volunteer at nonprofit'/> 
