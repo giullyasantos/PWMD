@@ -448,20 +448,24 @@ p {
 }
 
 .home-page, .donate-home{
-  animation: fadein 1s ease;
+  animation: fadein 2s ease;
 }
 
 .volunteer-home{
   animation: fadein 2s ease;
 }
 
+.volunteer-home .photo-slider{
+  animation: fadein 5s ease;
+}
+
 .home-page .right-bottom, .donate-home .right-bottom{
   transform: 400ms ease;
-  animation: slide-left 2s ease-in-out; 
+  animation: slide-left 3s ease-in-out; 
 }
 
 .home-page .left-top, .donate-home .left-top{
-  animation: slide-right 2s ease-in-out; 
+  animation: slide-right 3s ease-in-out; 
   transform: 400ms ease;
 }
 
