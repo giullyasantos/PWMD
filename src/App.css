@@ -455,6 +455,10 @@ p {
   animation: fadein 2s ease;
 }
 
+img{
+  animation: fadein 2s ease;
+}
+
 .volunteer-home .photo-slider{
   animation: fadein 5s ease;
 }
