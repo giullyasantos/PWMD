@@ -4,37 +4,37 @@ import React, { useState, useEffect, useRef} from 'react';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import Home1 from '../images/home/first-page/home1.JPG';
-import Home2 from '../images/home/first-page/home2.jpeg';
-import Home3 from '../images/home/first-page/home3.jpg';
-import Home4 from '../images/home/first-page/home4.png';
-import Home5 from '../images/home/first-page/home5.png';
+import Home1 from '../images/home/first-page/home1.webp';
+import Home2 from '../images/home/first-page/home2.webp';
+import Home3 from '../images/home/first-page/home3.webp';
+import Home4 from '../images/home/first-page/home4.webp';
+import Home5 from '../images/home/first-page/home5.webp';
 
 import PWMD from '../images/pwmd.webp';
-import Check from '../images/home/givinghelp.jpg';
-import CheckMobile from '../images/home/givinghelp2.jpg';
-import Book from '../images/home/book.jpg';
-import BookMobile from '../images/home/bookmobile.jpg';
+import Check from '../images/home/givinghelp.webp';
+import CheckMobile from '../images/home/givinghelp2.webp';
+import Book from '../images/home/book.webp';
+import BookMobile from '../images/home/bookmobile.webp';
 
 
-import alessandra from '../images/home/testimonials/alessandra.jpg';
-import claudia from '../images/home/testimonials/claudia.jpg';
-import helaine from '../images/home/testimonials/helaine.jpg';
-import nilton from '../images/home/testimonials/nilton.jpg';
-import nubia from '../images/home/testimonials/nubia.jpg';
-import paula from '../images/home/testimonials/paula.jpg';
-import soledad from '../images/home/testimonials/soledad.jpg';
+import alessandra from '../images/home/testimonials/alessandra.webp';
+import claudia from '../images/home/testimonials/claudia.webp';
+import helaine from '../images/home/testimonials/helaine.webp';
+import nilton from '../images/home/testimonials/nilton.webp';
+import nubia from '../images/home/testimonials/nubia.webp';
+import paula from '../images/home/testimonials/paula.webp';
+import soledad from '../images/home/testimonials/soledad.webp';
 import financial from '../images/home/financial.webp';
 import fundraiser from '../images/home/fundraiser.webp';
 import healtheducation from '../images/home/healthevent.webp';
 
-import alessandraMobile from '../images/home/testimonials/alessandramobile.png';
-import claudiaMobile from '../images/home/testimonials/claudiamobile.png';
-import helaineMobile from '../images/home/testimonials/helainemobile.png';
-import niltonMobile from '../images/home/testimonials/niltonmobile.png';
-import nubiaMobile from '../images/home/testimonials/nubiamobile.png';
-import paulaMobile from '../images/home/testimonials/paulamobile.png';
-import soledadMobile from '../images/home/testimonials/soledadmobile.png';
+import alessandraMobile from '../images/home/testimonials/alessandramobile.webp';
+import claudiaMobile from '../images/home/testimonials/claudiamobile.webp';
+import helaineMobile from '../images/home/testimonials/helainemobile.webp';
+import niltonMobile from '../images/home/testimonials/niltonmobile.webp';
+import nubiaMobile from '../images/home/testimonials/nubiamobile.webp';
+import paulaMobile from '../images/home/testimonials/paulamobile.webp';
+import soledadMobile from '../images/home/testimonials/soledadmobile.webp';
 
 
 const images = [

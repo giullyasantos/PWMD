@@ -1,7 +1,7 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
 
-import donor from '../images/donate/donate.jpg';
+import donor from '../images/home/givinghelp.webp';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 

@@ -4,24 +4,23 @@ import React, { useState, useEffect, useRef} from 'react';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import marcia from '../images/about/team/marcia.jpg';
-import adriana from '../images/about/team/adriana.jpg';
-
-import susan from '../images/about/team/susan.jpg';
-import edson from '../images/about/team/edson.jpg';
+import marcia from '../images/about/team/marcia.webp';
+import adriana from '../images/about/team/adriana.webp';
+import susan from '../images/about/team/susan.webp';
+import edson from '../images/about/team/edson.webp';
 
 import ceo from '../images/about/marciaceo.jpg';
 
-import food2 from '../images/about/slider/food2.jpg';
-import food from '../images/about/slider/food.jpg';
-import ame from '../images/about/slider/partner.jpg';
-import volunteers from '../images/about/slider/volunteers.jpg';
-import fundraiser from '../images/about/slider/fundraiser.jpeg';
-import donor from '../images/about/slider/donor.jpg';
-import marciaromero from '../images/about/slider/marcia.jpg';
-import clothes from '../images/about/slider/clothes.jpg';
-import dentist from '../images/about/slider/dentist.jpg';
-import dentist2 from '../images/about/slider/dentist2.jpg';
+import food2 from '../images/about/slider/food2.webp';
+import food from '../images/about/slider/food.webp';
+import ame from '../images/about/slider/partner.webp';
+import volunteers from '../images/about/slider/volunteers.webp';
+import fundraiser from '../images/about/slider/fundraiser.webp';
+import donor from '../images/about/slider/donor.webp';
+import marciaromero from '../images/about/slider/marcia.webp';
+import clothes from '../images/about/slider/clothes.webp';
+import dentist from '../images/about/slider/dentist.webp';
+import dentist2 from '../images/about/slider/dentist2.webp';
 
 function About() {
   return (

@@ -447,13 +447,21 @@ p {
   margin-bottom: 25%;
 }
 
+.home-page, .donate-home{
+  animation: fadein 1s ease;
+}
+
+.volunteer-home{
+  animation: fadein 2s ease;
+}
+
 .home-page .right-bottom, .donate-home .right-bottom{
   transform: 400ms ease;
-  animation: slide-left 1.5s ease-in-out; 
+  animation: slide-left 2s ease-in-out; 
 }
 
 .home-page .left-top, .donate-home .left-top{
-  animation: slide-right 1.5s ease-in-out; 
+  animation: slide-right 2s ease-in-out; 
   transform: 400ms ease;
 }
 

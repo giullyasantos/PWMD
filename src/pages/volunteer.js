@@ -4,24 +4,24 @@ import React, { useState, useEffect, useRef} from 'react';
 import SideNavbar from '../components/navbar';
 import Footer from '../components/footer';
 
-import volunteer3 from '../images/volunteer/volunteer3.jpg';
-import volunteer4 from '../images/volunteer/volunteer4.jpg';
-import volunteer5 from '../images/volunteer/volunteer5.jpg';
-import volunteer6 from '../images/volunteer/volunteer6.jpg';
-import volunteer7 from '../images/volunteer/volunteer7.jpg';
-import volunteer9 from '../images/volunteer/volunteer9.jpg';
-import volunteer10 from '../images/volunteer/volunteer10.jpg';
-import volunteer11 from '../images/volunteer/volunteer11.jpg';
-import volunteer12 from '../images/volunteer/volunteer12.jpg';
-import volunteer13 from '../images/volunteer/volunteer13.jpg';
-import volunteer14 from '../images/volunteer/volunteer14.jpg';
-import volunteer15 from '../images/volunteer/volunteer15.jpg';
-import volunteer16 from '../images/volunteer/volunteer16.jpg';
-import volunteer17 from '../images/volunteer/volunteer17.jpg';
-import volunteer18 from '../images/volunteer/volunteer18.jpg';
-import volunteer19 from '../images/volunteer/volunteer19.jpg';
-import volunteer22 from '../images/volunteer/volunteer22.jpg';
-import volunteer23 from '../images/volunteer/volunteer23.jpg';
+import volunteer3 from '../images/volunteer/volunteer3.webp';
+import volunteer4 from '../images/volunteer/volunteer4.webp';
+import volunteer5 from '../images/volunteer/volunteer5.webp';
+import volunteer6 from '../images/volunteer/volunteer6.webp';
+import volunteer7 from '../images/volunteer/volunteer7.webp';
+import volunteer9 from '../images/volunteer/volunteer9.webp';
+import volunteer10 from '../images/volunteer/volunteer10.webp';
+import volunteer11 from '../images/volunteer/volunteer11.webp';
+import volunteer12 from '../images/volunteer/volunteer12.webp';
+import volunteer13 from '../images/volunteer/volunteer13.webp';
+import volunteer14 from '../images/volunteer/volunteer14.webp';
+import volunteer15 from '../images/volunteer/volunteer15.webp';
+import volunteer16 from '../images/volunteer/volunteer16.webp';
+import volunteer17 from '../images/volunteer/volunteer17.webp';
+import volunteer18 from '../images/volunteer/volunteer18.webp';
+import volunteer19 from '../images/volunteer/volunteer19.webp';
+import volunteer22 from '../images/volunteer/volunteer22.webp';
+import volunteer23 from '../images/volunteer/volunteer23.webp';
 
 
 
