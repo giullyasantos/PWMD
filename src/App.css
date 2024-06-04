@@ -1432,7 +1432,7 @@ img{
   }
 
   .project-home{
-    margin-top: calc(10em + 70px); 
+    margin-top: calc(5em + 70px); 
     margin-bottom: 10em; 
     a{
       font-size: 0.7em;
