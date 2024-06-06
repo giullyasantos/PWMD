@@ -1583,6 +1583,7 @@ img{
 
 @media (max-width: 1024px) {
   .donate-home{ 
+    height: 80vh;
     flex-direction: column;
     .left-top, .right-bottom{
       width: 100%;
@@ -1601,13 +1602,34 @@ img{
       align-items: center;
     }
   }
+
+    .items-donation{
+
+      .right-bottom{
+      width: 80%;
+      padding-left: 1em;
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:start;
+
+      p{ 
+        width: 98%;
+      }
+
+      ul{
+        width: 80%;
+      }
+    
+      a{
+        margin-top: 2em;
+      }
+    }
+  }
   
   .items-donation{
-   margin-top: 0;
-
     .right-bottom{
-      width: 100%;
-
       p, ul{ 
         width: 90%;
       }
@@ -1619,6 +1641,7 @@ img{
     
   .donate-home p{
     width: 70%;
+    height: 70vh;
   }
 
   .donate-home{
@@ -1640,31 +1663,9 @@ img{
     }
   }
 
-  .items-donation{
-
-    .right-bottom{
-      width: 90%;
-      padding-left: 1em;
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items:center;
-
-      p{ 
-        width: 98%;
-      }
-
-      ul{
-        width: 80%;
-      }
-    
-      a{
-        margin-top: 2em;
-      }
-    }
+  .items-donation .right-bottom{
+    align-items:center;
   }
-
 }
 /*DONATE PAGE ENDS*/
 
