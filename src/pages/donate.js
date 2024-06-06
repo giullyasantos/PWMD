@@ -63,33 +63,6 @@ function Donate() {
             <div className='right-bottom'>
                 <h2>Your Generosity Makes A Difference!</h2>
                 <p>Your support is vital. There are various ways to contribute, each making a meaningful impact on the lives of those in need. Please choose the method that best suits you and join our mission today.</p>
-		<div className='next-to-each-other'>
-                  <a href='https://enroll.zellepay.com/qr-codes?data=ewogICJuYW1lIiA6ICJNQVJDSUEgUk9NRVJPIE1JTklTVFJZIElOQyIsCiAgInRva2VuIiA6ICI0MDc3MzkwNjEyIiwKICAiYWN0aW9uIiA6ICJwYXltZW50Igp9'> Zelle
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </a>
-                    <a href='https://www.paypal.com/paypalme/pwmdfoundation'> PayPal
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </a>
-                    <a href='https://cash.app/$PWMDFoundation'> CashApp
-                        <div class="icon">
-                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </a>
-
-		</div>
             </div>
         </section>
         <section className='sponsors'>
@@ -222,9 +195,38 @@ function Donate() {
             </div>
             <a className='underline-animation' href= 'https://form.jotform.com/241544874823160'><h4>Become A Member</h4></a>
         </section>
+	<section className='payment-methods'>
+            <h2>Your Donation Is Welcome Here!</h2>
+	    <div className='next-to-each-other'>
+                  <a href='https://enroll.zellepay.com/qr-codes?data=ewogICJuYW1lIiA6ICJNQVJDSUEgUk9NRVJPIE1JTklTVFJZIElOQyIsCiAgInRva2VuIiA6ICI0MDc3MzkwNjEyIiwKICAiYWN0aW9uIiA6ICJwYXltZW50Igp9'> Zelle
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href='https://www.paypal.com/paypalme/pwmdfoundation'> PayPal
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </a>
+                    <a href='https://cash.app/$PWMDFoundation'> CashApp
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </a>
+		</div>
+	</section>
         <section className='items-donation'>
             <div className='right-bottom'>
-                <h2>Your Donation Is Welcome Here!</h2>
+                <h2>Other Ways To Help:</h2>
     		<ul>
         	  <li style={{color: '#027593'}}>
             	    <strong style={{color: '#027593'}}>Medical Equipment:</strong>

@@ -1394,6 +1394,26 @@ img{
   }
 }
 
+.payment-methods{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: #027593;
+  height: auto;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  h2{
+    color: white;
+  }
+  .next-to-each-other{
+    justify-content: center;
+    gap: 3em;
+  }
+
+}
+
+
 .walkers {
   width: 100%;
   display: grid;

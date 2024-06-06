@@ -61,7 +61,7 @@ function GetHelp() {
         </section>
         <section className='food-info'>
             <h2>FREE FOOD WEDNESDAY</h2>
-            <p>Join us every Wednesday from 3:00 PM to 4:00 PM for our community grocery distribution. This event is open to all residents in need of food assistance and operates on a first-come, first-served basis. Fresh produce, dairy, and pantry items are available.</p>
+            <p>Join us every Wednesday from 2:30 PM to 3:30 PM for our community grocery distribution. This event is open to all residents in need of food assistance and operates on a first-come, first-served basis. Fresh produce, dairy, and pantry items are available.</p>
             <h4>A Partnership with:</h4>
             <a className='special' href='https://www.instagram.com/uhcnorlando/'>United Heart For The Nations Foundation</a>
 
