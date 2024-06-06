@@ -1475,7 +1475,13 @@ img{
     .div4 { grid-area: 1 / 4 / 2 / 5; }
   }
 
-
+  .payment-methods{
+    margin-bottom: 3em;
+    .next-to-each-other{
+      font-size: 0.85em;
+      gap: 0.5em;
+    }
+  }
 }
 
 /*PROJECTS PAGE ENDS*/
