@@ -14,6 +14,7 @@
 
 #credit, #phone-numbers, #email{
   color: rgb(2,117,147);
+  transition: color 200ms ease;
 }
 
 #phone-numbers, #email{
@@ -60,7 +61,7 @@
   color: currentColor;
 }
 
-.footer #address:hover, #giullya:hover, .social-media div:hover path  {
+.footer #address:hover, #giullya:hover, .social-media div:hover path, #phone-numbers:hover, #email:hover {
   color: #fd5a28f3;
   fill: #fd5a28f3;
 }
