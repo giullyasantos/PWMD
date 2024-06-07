@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* NAVBAR */
@@ -1290,6 +1291,7 @@ img{
   justify-content: center;
   align-items: center;
   margin-bottom: 10%;
+
   .next-to-each-other{ 
     justify-content: center;
     gap: 1em;
@@ -1298,6 +1300,7 @@ img{
 
   p{ 
     width: 60%;
+    
   }
 
   
