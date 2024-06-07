@@ -12,8 +12,20 @@
   color: rgb(2,117,147);
 }
 
-#credit{
+#credit, #phone-numbers, #email{
   color: rgb(2,117,147);
+}
+
+#phone-numbers, #email{
+  font-size: 0.85em;
+}
+
+.phone-numbers{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2%;
+  gap: 0.25em;
+  margin-top: 0.5em;
 }
 
 .footer .logo{
@@ -41,7 +53,7 @@
 
 .footer #address{
   font-size: 0.8em; 
-  margin-left: 18px;
+  margin-left: 2%;
 }
 
 .footer #address:visited, #giullya:visited{
@@ -159,10 +171,17 @@
   }
 }
 
+@media (max-width: 768px){
+  #phone-numbers, #email{
+    font-size: 0.60em;
+  }
+}
+
 @media (max-width: 355px){
   .footer #address{
     white-space: normal;
   }
+  
 }
 
 @media (max-width: 220px){
