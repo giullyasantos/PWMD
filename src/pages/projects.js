@@ -1,6 +1,6 @@
 import '../App.css';
 import React, { useState, useEffect, useRef} from 'react';
-import PWMD from '../images/pwmd.webp';
+import PWMD from '../images/help/help-home-mobile.webp';
 
 import crunches from '../images/help/crunches.jpg';
 import walker from '../images/help/walker.jpg';
@@ -18,18 +18,12 @@ function GetHelp() {
     <div className='project'>
         <SideNavbar/>
         <section className='project-home'>
-            <dotlottie-player 
-              src="https://lottie.host/016c081b-20b5-455b-93d1-f16e1adb76bf/gHEQCdMpu3.json"
-              background="transparent"
-              speed={0.75}
-              style={{ width: '10em', height: '10em' }}
-              loop
-              autoplay
-            />
+           <img src={PWMD} alt="hey"/>
             <h2> Need Healthcare Assistance? </h2>
-
-            <p>​We are here to support you! If you are here for a mammogram or breast ultrasound, simply click on the <strong>Pink Prevention Form</strong> below. For any other health-related matters like scheduling appointments with a specialist, managing medications, imaging (MRI, X-Ray), lab tests, or financial assistance (based on eligibility), please choose the <strong>Application for Services</strong> form below.
-            </p>
+            <p><strong>Financial Assistance</strong> is provided by People Who Make a Difference to the uninsured.</p>
+            <p>In case people cannot afford health insurance, their jobs do not offer coverage, or they cannot meet the requirements for government-sponsored health care programs, our programs assist them, with income at or below 150% of the poverty level.</p>
+            <p>Our Financial Assistance with <strong>Healthcare Costs</strong> includes specialist office visits, prescription assistance, imaging (MRI, X-Ray), laboratory testing; mammograms or breast ultrasounds are covered by our <strong>Pink Prevention</strong> Program and <strong>Education</strong> for preventing diseases such as <strong>Children Dental Care</strong> and <strong>Blue Prevention</strong> Programs (Men's Health).</p>
+            <p>Below you will find the Application for Services form.</p>
             <div className='next-to-each-other'>
               <a href='https://docs.google.com/forms/d/e/1FAIpQLSf-yz7E3rh0U-9YMRPnNe2BVYGsniFucwvj-bJhQrJ5eWqAMQ/viewform'> Pink Prevention Form
                 <div class="icon">

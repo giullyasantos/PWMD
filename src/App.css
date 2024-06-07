@@ -1289,7 +1289,6 @@ img{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
   margin-bottom: 10%;
   .next-to-each-other{ 
     justify-content: center;
@@ -1300,6 +1299,14 @@ img{
   p{ 
     width: 60%;
   }
+
+  
+  img{
+    object-fit: cover;
+    height: 100%;
+    width: 50%;
+  }
+
 }
 .wheelchair{
   margin-left: 70px;
@@ -1452,7 +1459,7 @@ img{
   }
 
   .project-home{
-    margin-top: calc(5em + 70px); 
+    margin-top: calc(2em + 70px); 
     margin-bottom: 10em; 
     a{
       font-size: 0.7em;
@@ -1461,6 +1468,14 @@ img{
 }
 
 @media (max-width: 768px) {
+  .project-home{
+    p{
+      width: 80%;
+    }
+    img{
+      width: 100%;
+    }
+  }
   .wheelchair{
     flex-direction: column;
     margin-top: 3em;
